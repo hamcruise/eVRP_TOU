@@ -1,0 +1,2487 @@
+
+<<< setup
+
+m	inst	veh	dist	cost	Sec	limit	gap	bin
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 151 variables, 452 constraints
+ ! Presolve      : 1 extractable eliminated
+ ! TimeLimit            = 300
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.03s (0.03s extraction + 0.00s propagation)
+ !  . Log search space  : 1,078.0 (before), 1,078.0 (after)
+ !  . Memory usage      : 1.2 MB (before), 1.2 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        151                 -
+ + New bound is 2; 264
+ ! Using temporal relaxation.
+ *             2   63,752  2.53s        4      (gap is 0.00%)
+   New objective is 2; 264
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 2; 264 (optimal)
+ ! Best bound             : 2; 264
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 535,440
+ ! Number of fails        : 265,064
+ ! Total memory usage     : 12.7 MB (12.4 MB CP Optimizer + 0.3 MB Concert)
+ ! Time spent in solve    : 2.67s (2.64s engine + 0.03s extraction)
+ ! Search speed (br. / s) : 202,358.3
+ ! ----------------------------------------------------------------------------
+totVehicle  = 2
+totDistance = 264
+totCost  	 = 239.466666667
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S15	24	0	1236	24	83	17	177	54	0	0
+D0	C12	38	176	228	176	0	0	200	40	20	90
+S0	C30	21	355	407	407	0	0	166	21	10	90
+S0	C85	30	737	809	802	0	0	109	30	30	90
+S5	C100	24	744	798	752	0	0	133	38	20	90
+S15	C64	10	263	325	263	0	0	177	61	10	90
+C30	S0	21	0	1236	518	727	60	151	0	0	0
+C12	S5	6	0	1236	272	370	28	176	34	0	0
+C100	DN	38	0	1236	1148	0	0	27	0	0	0
+C85	DN	30	0	1236	1148	0	0	27	0	0	0
+C64	S0	22	0	1236	375	386	3	166	39	0	0
+1	Dist	c101C5.txt	2	264	239.466666667	2.677	300	0
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 151 variables, 452 constraints
+ ! Presolve      : 2 extractables eliminated
+ ! TimeLimit            = 300
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.03s (0.03s extraction + 0.00s propagation)
+ !  . Log search space  : 1,078.0 (before), 1,078.0 (after)
+ !  . Memory usage      : 1.3 MB (before), 1.3 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        151                 -
+ + New bound is 2; 264; 0
+ ! Using temporal relaxation.
+ *             2   67,570  2.44s        4      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 2; 264; 239.4666
+ *             2     175k  6.54s        4      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 2; 264; 233.4666
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 2 solutions found.
+ ! Best objective         : 2; 264; 233.4666 (gap is 100.0% @ crit. 3 of 3)
+ ! Best bound             : 2; 264; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 85,580,725
+ ! Number of fails        : 40,019,526
+ ! Total memory usage     : 27.6 MB (27.1 MB CP Optimizer + 0.5 MB Concert)
+ ! Time spent in solve    : 300.06s (300.03s engine + 0.03s extraction)
+ ! Search speed (br. / s) : 285,236.8
+ ! ----------------------------------------------------------------------------
+totVehicle  = 2
+totDistance = 264
+totCost  	 = 233.466666667
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S15	24	0	1236	24	104	23	148	54	0	0
+D0	C12	38	176	228	176	0	0	163	40	20	90
+S0	C85	30	737	809	795	0	0	39	30	30	90
+S0	C30	21	355	407	396	0	0	78	24	10	90
+S5	C100	24	744	798	794	0	0	77	38	20	90
+S15	C64	10	263	325	263	0	0	100	67	10	90
+C30	S0	21	0	1236	507	705	57	56	3	0	0
+C12	S5	6	0	1236	272	370	28	105	34	0	0
+C100	DN	38	0	1236	1157	0	0	4	0	0	0
+C85	DN	30	0	1236	1157	0	0	4	0	0	0
+C64	S0	22	0	1236	375	375	0	87	45	0	0
+1	MCP-TOU2	c101C5.txt	2	264	233.466666667	300.067	300	0
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 124 variables, 343 constraints
+ ! Presolve      : 20 extractables eliminated
+ ! TimeLimit            = 300
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 857.8 (before), 857.8 (after)
+ !  . Memory usage      : 1.3 MB (before), 1.3 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        124                 -
+ + New bound is 1; 176
+ ! Using temporal relaxation.
+ *             1   26,604  1.06s        4      (gap is 0.00%)
+   New objective is 1; 176
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 1; 176 (optimal)
+ ! Best bound             : 1; 176
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 244,510
+ ! Number of fails        : 119,995
+ ! Total memory usage     : 11.7 MB (11.0 MB CP Optimizer + 0.6 MB Concert)
+ ! Time spent in solve    : 1.23s (1.21s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 201,740.9
+ ! ----------------------------------------------------------------------------
+totVehicle  = 1
+totDistance = 176
+totCost  	 = 279.3
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	C65	13	67	139	67	0	0	199	65	10	90
+S0	C20	10	0	1136	637	0	0	89	54	10	90
+S0	C98	31	0	1115	236	0	0	185	31	20	90
+S15	DN	24	0	1236	1211	0	0	7	0	0	0
+C20	C24	5	0	1131	824	0	0	60	49	10	90
+C98	S0	31	0	1236	357	580	64	148	0	0	0
+C65	S0	13	0	1236	170	205	10	189	52	0	0
+C57	S15	11	0	1236	1090	1174	24	9	0	0	0
+C24	C57	38	989	1063	989	0	0	50	11	40	90
+2	Dist	c103C5.txt	1	176	279.3	1.231	300	0
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 124 variables, 343 constraints
+ ! Presolve      : 38 extractables eliminated
+ ! TimeLimit            = 300
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 857.8 (before), 857.8 (after)
+ !  . Memory usage      : 1.3 MB (before), 1.3 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        124                 -
+ + New bound is 1; 176; 0
+ ! Using temporal relaxation.
+ *             1   28,306  1.03s        4      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 1; 176; 274.5166
+ *             1   76,681  2.93s        6      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 1; 176; 254.9500
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 2 solutions found.
+ ! Best objective         : 1; 176; 254.9500 (gap is 100.0% @ crit. 3 of 3)
+ ! Best bound             : 1; 176; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 103,852,991
+ ! Number of fails        : 48,891,641
+ ! Total memory usage     : 31.5 MB (30.7 MB CP Optimizer + 0.8 MB Concert)
+ ! Time spent in solve    : 300.03s (300.01s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 346,162.8
+ ! ----------------------------------------------------------------------------
+totVehicle  = 1
+totDistance = 176
+totCost  	 = 254.95
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	C65	13	67	139	67	0	0	197	65	10	90
+S0	C98	31	0	1115	236	0	0	185	31	20	90
+S0	C20	10	0	1136	681	0	0	153	67	10	90
+S15	DN	24	0	1236	1173	0	0	0	0	0	0
+C20	C24	5	0	1131	836	0	0	92	62	10	90
+C98	D0	31	0	1236	0	0	0	200	78	0	0
+C98	S0	31	0	1236	357	625	77	160	0	0	0
+C65	S0	13	0	1236	170	205	10	185	52	0	0
+C57	S15	11	0	1236	1090	1129	11	10	13	0	0
+C24	C57	38	989	1063	989	0	0	79	24	40	90
+2	MCP-TOU2	c103C5.txt	1	176	254.95	300.032	300	0
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 191 variables, 528 constraints
+ ! Presolve      : 44 extractables eliminated
+ ! TimeLimit            = 300
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.03s (0.03s extraction + 0.00s propagation)
+ !  . Log search space  : 1,494.6 (before), 1,494.6 (after)
+ !  . Memory usage      : 1.6 MB (before), 1.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        191                 -
+ + New bound is 1; 250
+ ! Using temporal relaxation.
+ *             1   70,062  3.41s        4      (gap is 0.00%)
+   New objective is 1; 250
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 1; 250 (optimal)
+ ! Best bound             : 1; 250
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 576,713
+ ! Number of fails        : 284,844
+ ! Total memory usage     : 16.3 MB (15.3 MB CP Optimizer + 1.1 MB Concert)
+ ! Time spent in solve    : 3.58s (3.54s engine + 0.03s extraction)
+ ! Search speed (br. / s) : 162,545.9
+ ! ----------------------------------------------------------------------------
+totVehicle  = 1
+totDistance = 250
+totCost  	 = 478.733333333
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	C75	16	948	1570	948	0	0	512	62	20	90
+S0	DN	0	0	3390	3356	0	0	211	0	0	0
+S11	C35	9	1954	2536	2103	0	0	251	38	10	90
+S15	C77	38	1419	1969	1448	0	0	296	33	10	90
+S17	C53	19	1442	2060	1799	0	0	283	41	20	90
+C35	S0	38	0	3390	2231	2231	0	237	0	0	0
+C53	S11	41	0	3390	1930	2094	47	252	0	0	0
+C44	S15	9	0	3390	1184	1410	65	304	6	0	0
+C77	S17	33	0	3390	1571	1780	60	286	0	0	0
+C75	C44	47	693	1215	1085	0	0	492	15	10	90
+3	Dist	c206C5.txt	1	250	478.733333333	3.58	300	0
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 191 variables, 528 constraints
+ ! Presolve      : 50 extractables eliminated
+ ! TimeLimit            = 300
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.03s (0.03s extraction + 0.00s propagation)
+ !  . Log search space  : 1,494.6 (before), 1,494.6 (after)
+ !  . Memory usage      : 1.6 MB (before), 1.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        191                 -
+ + New bound is 1; 250; 0
+ ! Using temporal relaxation.
+ *             1   72,285  3.35s        4      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 1; 250; 478.7333
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 1 solution found.
+ ! Best objective         : 1; 250; 478.7333 (gap is 100.0% @ crit. 3 of 3)
+ ! Best bound             : 1; 250; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 93,814,834
+ ! Number of fails        : 42,890,280
+ ! Total memory usage     : 37.3 MB (36.1 MB CP Optimizer + 1.3 MB Concert)
+ ! Time spent in solve    : 300.04s (300.01s engine + 0.03s extraction)
+ ! Search speed (br. / s) : 312,701.5
+ ! ----------------------------------------------------------------------------
+totVehicle  = 1
+totDistance = 250
+totCost  	 = 478.733333333
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	C75	16	948	1570	948	0	0	512	62	20	90
+S0	DN	0	0	3390	3356	0	0	211	0	0	0
+S11	C35	9	1954	2536	2103	0	0	251	38	10	90
+S15	C77	38	1419	1969	1448	0	0	296	33	10	90
+S17	C53	19	1442	2060	1799	0	0	283	41	20	90
+C35	S0	38	0	3390	2231	2231	0	237	0	0	0
+C53	S11	41	0	3390	1930	2094	47	252	0	0	0
+C44	S15	9	0	3390	1184	1410	65	304	6	0	0
+C77	S17	33	0	3390	1571	1780	60	286	0	0	0
+C75	C44	47	693	1215	1085	0	0	492	15	10	90
+3	MCP-TOU2	c206C5.txt	1	250	478.733333333	300.047	300	0
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 156 variables, 417 constraints
+ ! Presolve      : 53 extractables eliminated
+ ! TimeLimit            = 300
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 1,177.4 (before), 1,177.4 (after)
+ !  . Memory usage      : 1.6 MB (before), 1.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        156                 -
+ + New bound is 1; 164
+ ! Using temporal relaxation.
+ *             1    2,085  0.17s        6      (gap is 0.00%)
+   New objective is 1; 164
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 1; 164 (optimal)
+ ! Best bound             : 1; 164
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 45,149
+ ! Number of fails        : 21,475
+ ! Total memory usage     : 12.5 MB (11.1 MB CP Optimizer + 1.4 MB Concert)
+ ! Time spent in solve    : 0.31s (0.29s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 152,530.4
+ ! ----------------------------------------------------------------------------
+totVehicle  = 1
+totDistance = 164
+totCost  	 = 154.216666667
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	C50	23	255	895	255	0	0	100	55	10	90
+S0	DN	0	0	3390	1921	0	0	0	0	0	0
+S11	C39	20	1642	2282	1791	0	0	20	40	20	90
+S14	C60	9	1152	1792	1152	0	0	90	50	20	90
+C39	S0	40	0	3390	1921	1921	0	0	0	0	0
+C50	S14	22	0	3390	367	458	26	90	33	0	0
+C60	C58	3	1245	1885	1245	0	0	70	47	30	90
+C58	C53	6	1431	2071	1431	0	0	40	41	20	90
+C53	S11	41	0	3390	1562	1771	60	20	0	0	0
+4	Dist	c208C5.txt	1	164	154.216666667	0.319	300	0
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 156 variables, 417 constraints
+ ! Presolve      : 56 extractables eliminated
+ ! TimeLimit            = 300
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 1,177.4 (before), 1,177.4 (after)
+ !  . Memory usage      : 1.6 MB (before), 1.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        156                 -
+ + New bound is 1; 164; 0
+ ! Using temporal relaxation.
+ *             1    2,349  0.17s        6      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 1; 164; 154.2166
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 1 solution found.
+ ! Best objective         : 1; 164; 154.2166 (gap is 100.0% @ crit. 3 of 3)
+ ! Best bound             : 1; 164; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 132,402,219
+ ! Number of fails        : 62,133,449
+ ! Total memory usage     : 40.5 MB (38.8 MB CP Optimizer + 1.6 MB Concert)
+ ! Time spent in solve    : 300.09s (300.07s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 441,224.5
+ ! ----------------------------------------------------------------------------
+totVehicle  = 1
+totDistance = 164
+totCost  	 = 154.216666667
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	C50	23	255	895	255	0	0	100	55	10	90
+S0	DN	0	0	3390	1921	0	0	0	0	0	0
+S11	C39	20	1642	2282	1791	0	0	20	40	20	90
+S14	C60	9	1152	1792	1152	0	0	90	50	20	90
+C39	S0	40	0	3390	1921	1921	0	0	0	0	0
+C50	S14	22	0	3390	367	458	26	90	33	0	0
+C60	C58	3	1245	1885	1245	0	0	70	47	30	90
+C58	C53	6	1431	2071	1431	0	0	40	41	20	90
+C53	S11	41	0	3390	1562	1771	60	20	0	0	0
+4	MCP-TOU2	c208C5.txt	1	164	154.216666667	300.099	300	0
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 162 variables, 465 constraints
+ ! Presolve      : 81 extractables eliminated
+ ! TimeLimit            = 300
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.03s (0.03s extraction + 0.00s propagation)
+ !  . Log search space  : 1,131.5 (before), 1,131.5 (after)
+ !  . Memory usage      : 1.6 MB (before), 1.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        162                 -
+ + New bound is 2; 136
+ ! Using temporal relaxation.
+ *             2   11,267  0.61s        6      (gap is 0.00%)
+   New objective is 2; 136
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 2; 136 (optimal)
+ ! Best bound             : 2; 136
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 141,359
+ ! Number of fails        : 68,091
+ ! Total memory usage     : 15.9 MB (14.0 MB CP Optimizer + 1.9 MB Concert)
+ ! Time spent in solve    : 0.75s (0.71s engine + 0.03s extraction)
+ ! Search speed (br. / s) : 197,153.4
+ ! ----------------------------------------------------------------------------
+totVehicle  = 2
+totDistance = 136
+totCost  	 = 4.333333333
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	C1	15	36	46	36	0	0	153	46	10	10
+D0	C5	21	0	199	58	0	0	165	39	26	10
+S0	DN	0	0	230	208	0	0	11	0	0	0
+S0	DN	0	0	230	208	0	0	11	0	0	0
+S3	D0	28	0	230	0	0	0	200	61	0	0
+S3	C71	12	0	180	81	0	0	128	40	15	10
+C71	S0	40	0	230	131	131	0	66	0	0	0
+C1	S3	13	0	230	59	69	19	134	33	0	0
+C5	C99	6	0	202	113	0	0	63	32	9	10
+C87	S0	18	0	230	194	194	0	11	1	0	0
+C99	C87	11	166	176	166	0	0	37	21	26	10
+5	Dist	r104C5.txt	2	136	4.333333333	0.75	300	0
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 162 variables, 465 constraints
+ ! Presolve      : 106 extractables eliminated
+ ! TimeLimit            = 300
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.03s (0.03s extraction + 0.00s propagation)
+ !  . Log search space  : 1,131.5 (before), 1,131.5 (after)
+ !  . Memory usage      : 1.6 MB (before), 1.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        162                 -
+ + New bound is 2; 136; 0
+ ! Using temporal relaxation.
+ *             2   11,762  0.61s        6      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 2; 136; 4.333333
+ ! Using failure-directed search.
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 1 solution found.
+ ! Best objective         : 2; 136; 4.333333 (gap is 100.0% @ crit. 3 of 3)
+ ! Best bound             : 2; 136; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 135,505,787
+ ! Number of fails        : 61,461,739
+ ! Total memory usage     : 36.1 MB (34.1 MB CP Optimizer + 2.1 MB Concert)
+ ! Time spent in solve    : 300.11s (300.08s engine + 0.03s extraction)
+ ! Search speed (br. / s) : 451,556.5
+ ! ----------------------------------------------------------------------------
+totVehicle  = 2
+totDistance = 136
+totCost  	 = 4.333333333
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	C1	15	36	46	36	0	0	153	46	10	10
+D0	C5	21	0	199	58	0	0	165	39	26	10
+S0	DN	0	0	230	208	0	0	11	0	0	0
+S0	DN	0	0	230	208	0	0	11	0	0	0
+S3	D0	28	0	230	0	0	0	200	61	0	0
+S3	C71	12	0	180	81	0	0	128	40	15	10
+C71	S0	40	0	230	131	131	0	66	0	0	0
+C1	S3	13	0	230	59	69	19	134	33	0	0
+C5	C99	6	0	202	113	0	0	63	32	9	10
+C87	S0	18	0	230	194	194	0	11	1	0	0
+C99	C87	11	166	176	166	0	0	37	21	26	10
+5	MCP-TOU2	r104C5.txt	2	136	4.333333333	300.118	300	0
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 158 variables, 496 constraints
+ ! Presolve      : 123 extractables eliminated
+ ! TimeLimit            = 300
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.04s (0.04s extraction + 0.00s propagation)
+ !  . Log search space  : 1,094.4 (before), 1,094.4 (after)
+ !  . Memory usage      : 1.6 MB (before), 1.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        158                 -
+ + New bound is 2; 156
+ ! Using temporal relaxation.
+ *             2    2,072  0.20s        1      (gap is 0.00%)
+   New objective is 2; 156
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 2; 156 (optimal)
+ ! Best bound             : 2; 156
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 42,051
+ ! Number of fails        : 19,772
+ ! Total memory usage     : 13.6 MB (11.3 MB CP Optimizer + 2.2 MB Concert)
+ ! Time spent in solve    : 0.33s (0.29s engine + 0.04s extraction)
+ ! Search speed (br. / s) : 142,064.2
+ ! ----------------------------------------------------------------------------
+totVehicle  = 2
+totDistance = 156
+totCost  	 = 9.533333333
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	C91	26	77	107	77	0	0	21	26	1	10
+D0	C75	28	49	79	49	0	0	37	33	18	10
+S1	C78	15	158	188	158	0	0	19	31	3	10
+C91	C95	11	130	160	130	0	0	20	15	20	10
+C28	DN	6	0	230	209	0	0	0	0	0	0
+C75	S1	30	0	230	89	111	43	19	3	0	0
+C78	C28	25	183	213	193	0	0	16	6	16	10
+C95	DN	15	0	230	209	0	0	0	0	0	0
+6	Dist	r105C5.txt	2	156	9.533333333	0.338	300	0
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 158 variables, 496 constraints
+ ! Presolve      : 140 extractables eliminated
+ ! TimeLimit            = 300
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.04s (0.04s extraction + 0.00s propagation)
+ !  . Log search space  : 1,094.4 (before), 1,094.4 (after)
+ !  . Memory usage      : 1.6 MB (before), 1.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        158                 -
+ + New bound is 2; 156; 0
+ ! Using temporal relaxation.
+ *             2    2,367  0.20s        1      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 2; 156; 9.533333
+ ! Using failure-directed search.
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 1 solution found.
+ ! Best objective         : 2; 156; 9.533333 (gap is 100.0% @ crit. 3 of 3)
+ ! Best bound             : 2; 156; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 207,044,844
+ ! Number of fails        : 97,092,662
+ ! Total memory usage     : 47.3 MB (44.9 MB CP Optimizer + 2.4 MB Concert)
+ ! Time spent in solve    : 300.10s (300.06s engine + 0.04s extraction)
+ ! Search speed (br. / s) : 689,995.4
+ ! ----------------------------------------------------------------------------
+totVehicle  = 2
+totDistance = 156
+totCost  	 = 9.533333333
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	C91	26	77	107	77	0	0	21	26	1	10
+D0	C75	28	49	79	49	0	0	37	33	18	10
+S1	C78	15	158	188	158	0	0	19	31	3	10
+C91	C95	11	130	160	130	0	0	20	15	20	10
+C28	DN	6	0	230	209	0	0	0	0	0	0
+C75	S1	30	0	230	89	111	43	19	3	0	0
+C78	C28	25	183	213	193	0	0	16	6	16	10
+C95	DN	15	0	230	209	0	0	0	0	0	0
+6	MCP-TOU2	r105C5.txt	2	156	9.533333333	300.109	300	0
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 158 variables, 406 constraints
+ ! Presolve      : 144 extractables eliminated
+ ! TimeLimit            = 300
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 1,165.2 (before), 1,165.2 (after)
+ !  . Memory usage      : 1.6 MB (before), 1.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        158                 -
+ + New bound is 1; 143
+ ! Using temporal relaxation.
+ *             1     142k  5.34s        7      (gap is 0.00%)
+   New objective is 1; 143
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 1; 143 (optimal)
+ ! Best bound             : 1; 143
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 1,211,206
+ ! Number of fails        : 601,706
+ ! Total memory usage     : 15.9 MB (13.3 MB CP Optimizer + 2.6 MB Concert)
+ ! Time spent in solve    : 5.50s (5.49s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 220,580.2
+ ! ----------------------------------------------------------------------------
+totVehicle  = 1
+totDistance = 143
+totCost  	 = 17.983333333
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S0	0	0	1000	0	0	0	61	60	0	0
+S0	C77	20	86	224	86	0	0	61	40	14	10
+S0	C72	22	104	252	154	0	0	47	30	25	10
+S13	C17	18	0	959	246	0	0	14	34	2	10
+C77	S0	20	0	1000	116	132	32	47	20	0	0
+C17	C18	18	403	513	403	0	0	12	16	12	10
+C37	S13	2	0	1000	203	228	51	14	1	0	0
+C18	DN	16	0	1000	429	0	0	0	0	0	0
+C72	C37	27	0	968	191	0	0	22	3	8	10
+7	Dist	r202C5.txt	1	143	17.983333333	5.508	300	0
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 158 variables, 406 constraints
+ ! Presolve      : 148 extractables eliminated
+ ! TimeLimit            = 300
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 1,165.2 (before), 1,165.2 (after)
+ !  . Memory usage      : 1.6 MB (before), 1.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        158                 -
+ + New bound is 1; 143; 0
+ ! Using temporal relaxation.
+ *             1     145k  6.38s        7      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 1; 143; 17.98333
+ *             1     330k  12.58s       3      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 1; 143; 17.86666
+ *             1     330k  13.31s       7      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 1; 143; 17.81666
+ *             1     744k  27.52s       6      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 1; 143; 17.76666
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 4 solutions found.
+ ! Best objective         : 1; 143; 17.76666 (gap is 100.0% @ crit. 3 of 3)
+ ! Best bound             : 1; 143; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 117,343,760
+ ! Number of fails        : 57,160,642
+ ! Total memory usage     : 34.6 MB (31.8 MB CP Optimizer + 2.8 MB Concert)
+ ! Time spent in solve    : 300.05s (300.03s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 391,104.1
+ ! ----------------------------------------------------------------------------
+totVehicle  = 1
+totDistance = 143
+totCost  	 = 17.766666667
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S0	0	0	1000	0	0	0	61	60	0	0
+S0	C72	22	104	252	216	0	0	47	28	25	10
+S0	C77	20	86	224	86	0	0	61	40	14	10
+S13	C37	2	0	968	281	0	0	22	52	8	10
+C77	S0	20	0	1000	179	194	30	47	20	0	0
+C17	C18	18	403	513	403	0	0	12	16	12	10
+C37	C17	18	0	959	309	0	0	14	34	2	10
+C18	DN	16	0	1000	429	0	0	0	0	0	0
+C72	S13	27	0	1000	253	279	53	22	1	0	0
+7	MCP-TOU2	r202C5.txt	1	143	17.766666667	300.051	300	0
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 195 variables, 492 constraints
+ ! Presolve      : 151 extractables eliminated
+ ! TimeLimit            = 300
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 1,497.3 (before), 1,497.3 (after)
+ !  . Memory usage      : 1.6 MB (before), 1.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        195                 -
+ + New bound is 1; 185
+ ! Using temporal relaxation.
+ *             1     173k  8.40s        5      (gap is 0.00%)
+   New objective is 1; 185
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 1; 185 (optimal)
+ ! Best bound             : 1; 185
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 1,447,414
+ ! Number of fails        : 719,120
+ ! Total memory usage     : 18.6 MB (15.6 MB CP Optimizer + 3.0 MB Concert)
+ ! Time spent in solve    : 8.65s (8.63s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 167,699.5
+ ! ----------------------------------------------------------------------------
+totVehicle  = 1
+totDistance = 185
+totCost  	 = 49.35
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S0	0	0	1000	0	0	0	852	60	0	0
+S0	DN	0	0	1000	875	0	0	82	0	0	0
+S0	C25	34	418	532	418	0	0	661	26	6	10
+S1	C79	13	0	964	486	0	0	629	40	23	10
+S7	C96	34	0	974	664	0	0	108	17	11	10
+S7	C49	16	0	946	579	0	0	542	16	30	10
+C50	S7	30	0	1000	547	563	32	593	0	0	0
+C96	S0	15	0	1000	689	689	0	90	0	0	0
+C79	C50	10	507	599	507	0	0	606	30	13	10
+C25	S1	17	0	1000	445	467	44	630	9	0	0
+C49	S7	16	0	1000	605	630	51	214	0	0	0
+8	Dist	r203C5.txt	1	185	49.35	8.651	300	0
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 195 variables, 492 constraints
+ ! Presolve      : 154 extractables eliminated
+ ! TimeLimit            = 300
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 1,497.3 (before), 1,497.3 (after)
+ !  . Memory usage      : 1.6 MB (before), 1.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        195                 -
+ + New bound is 1; 185; 0
+ ! Using temporal relaxation.
+ *             1     176k  8.55s        5      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 1; 185; 49.35000
+ *             1     330k  13.66s       1      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 1; 185; 42.86666
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 2 solutions found.
+ ! Best objective         : 1; 185; 42.86666 (gap is 100.0% @ crit. 3 of 3)
+ ! Best bound             : 1; 185; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 149,496,064
+ ! Number of fails        : 72,341,982
+ ! Total memory usage     : 40.6 MB (37.3 MB CP Optimizer + 3.3 MB Concert)
+ ! Time spent in solve    : 300.05s (300.03s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 498,263.7
+ ! ----------------------------------------------------------------------------
+totVehicle  = 1
+totDistance = 185
+totCost  	 = 42.866666667
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	C25	34	418	532	418	0	0	83	27	6	10
+S1	C79	13	0	964	480	0	0	77	41	23	10
+S7	C49	16	0	946	579	0	0	41	17	30	10
+S7	C96	34	0	974	957	0	0	11	15	11	10
+C50	S7	30	0	1000	547	563	32	41	1	0	0
+C96	DN	15	0	1000	982	0	0	0	0	0	0
+C79	C50	10	507	599	507	0	0	54	31	13	10
+C25	S1	17	0	1000	445	467	44	77	10	0	0
+C49	S7	16	0	1000	899	923	48	11	1	0	0
+8	MCP-TOU2	r203C5.txt	1	185	42.866666667	300.054	300	0
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 188 variables, 585 constraints
+ ! Presolve      : 173 extractables eliminated
+ ! TimeLimit            = 300
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.05s (0.05s extraction + 0.00s propagation)
+ !  . Log search space  : 1,363.0 (before), 1,363.0 (after)
+ !  . Memory usage      : 1.6 MB (before), 1.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        188                 -
+ + New bound is 2; 242
+ ! Using temporal relaxation.
+ *             2    2,588  0.62s        3      (gap is 0.00%)
+   New objective is 2; 242
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 2; 242 (optimal)
+ ! Best bound             : 2; 242
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 108,355
+ ! Number of fails        : 51,962
+ ! Total memory usage     : 19.5 MB (16.0 MB CP Optimizer + 3.5 MB Concert)
+ ! Time spent in solve    : 0.76s (0.71s engine + 0.05s extraction)
+ ! Search speed (br. / s) : 150,493.1
+ ! ----------------------------------------------------------------------------
+totVehicle  = 2
+totDistance = 242
+totCost  	 = 15.333333333
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S0	0	0	240	0	0	0	198	77	0	0
+D0	C36	43	59	114	59	0	0	146	35	40	10
+S0	C55	14	15	116	15	0	0	198	63	16	10
+S3	C82	49	111	147	144	0	0	59	15	9	10
+S9	C11	20	76	126	76	0	0	182	52	40	10
+S15	DN	24	0	240	214	0	0	19	0	0	0
+C11	C22	41	96	146	127	0	0	128	11	40	10
+C22	S15	11	0	240	148	158	25	74	0	0	0
+C55	S9	16	0	240	41	51	25	182	47	0	0
+C82	DN	15	0	240	214	0	0	19	0	0	0
+C36	S3	9	0	240	78	93	38	65	26	0	0
+9	Dist	rc105C5.txt	2	242	15.333333333	0.77	300	0
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 188 variables, 585 constraints
+ ! Presolve      : 192 extractables eliminated
+ ! TimeLimit            = 300
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.05s (0.05s extraction + 0.00s propagation)
+ !  . Log search space  : 1,363.0 (before), 1,363.0 (after)
+ !  . Memory usage      : 1.6 MB (before), 1.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        188                 -
+ + New bound is 2; 242; 0
+ ! Using temporal relaxation.
+ *             2    2,872  0.63s        3      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 2; 242; 15.33333
+ *             2   20,940  0.79s        3      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 2; 242; 15.30000
+ *             2    2,439  0.79s        8      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 2; 242; 14.88333
+ ! Using failure-directed search.
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 3 solutions found.
+ ! Best objective         : 2; 242; 14.88333 (gap is 100.0% @ crit. 3 of 3)
+ ! Best bound             : 2; 242; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 153,596,219
+ ! Number of fails        : 71,542,496
+ ! Total memory usage     : 41.4 MB (37.7 MB CP Optimizer + 3.7 MB Concert)
+ ! Time spent in solve    : 300.17s (300.12s engine + 0.05s extraction)
+ ! Search speed (br. / s) : 511,774.2
+ ! ----------------------------------------------------------------------------
+totVehicle  = 2
+totDistance = 242
+totCost  	 = 14.883333333
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	C55	14	15	116	15	0	0	96	64	16	10
+D0	C36	43	59	114	59	0	0	49	35	40	10
+S3	C82	49	111	147	142	0	0	9	15	9	10
+S9	C11	20	76	126	76	0	0	80	53	40	10
+S15	DN	24	0	240	181	0	0	0	0	0	0
+C11	C22	41	96	146	127	0	0	40	12	40	10
+C22	S15	11	0	240	148	157	23	0	1	0	0
+C55	S9	16	0	240	41	51	25	80	48	0	0
+C82	DN	15	0	240	181	0	0	0	0	0	0
+C36	S3	9	0	240	78	93	38	9	26	0	0
+9	MCP-TOU2	rc105C5.txt	2	242	14.883333333	300.176	300	0
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 193 variables, 579 constraints
+ ! Presolve      : 230 extractables eliminated
+ ! TimeLimit            = 300
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.04s (0.04s extraction + 0.00s propagation)
+ !  . Log search space  : 1,409.6 (before), 1,409.6 (after)
+ !  . Memory usage      : 1.6 MB (before), 1.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        193                 -
+ + New bound is 2; 252
+ ! Using temporal relaxation.
+ *             2    2,434  0.71s        8      (gap is 0.00%)
+   New objective is 2; 252
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 2; 252 (optimal)
+ ! Best bound             : 2; 252
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 134,103
+ ! Number of fails        : 64,440
+ ! Total memory usage     : 19.4 MB (15.5 MB CP Optimizer + 3.9 MB Concert)
+ ! Time spent in solve    : 0.89s (0.84s engine + 0.04s extraction)
+ ! Search speed (br. / s) : 158,701.8
+ ! ----------------------------------------------------------------------------
+totVehicle  = 2
+totDistance = 252
+totCost  	 = 17.233333333
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S0	0	0	240	0	0	0	44	77	0	0
+D0	S0	0	0	240	0	0	0	65	77	0	0
+S0	C71	25	26	111	26	0	0	44	52	14	10
+S0	C21	45	55	185	55	0	0	65	32	10	10
+S11	C15	14	96	190	167	0	0	20	39	20	10
+S14	C97	24	58	131	111	0	0	55	14	35	10
+S19	DN	42	0	240	216	0	0	0	0	0	0
+C34	S19	9	0	240	87	98	27	0	15	0	0
+C21	S14	14	0	240	79	87	20	55	18	0	0
+C97	S11	12	0	240	133	153	51	20	2	0	0
+C71	C34	28	68	182	68	0	0	30	24	30	10
+C15	DN	39	0	240	216	0	0	0	0	0	0
+10	Dist	rc108C5.txt	2	252	17.233333333	0.892	300	0
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 193 variables, 579 constraints
+ ! Presolve      : 268 extractables eliminated
+ ! TimeLimit            = 300
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.04s (0.04s extraction + 0.00s propagation)
+ !  . Log search space  : 1,409.6 (before), 1,409.6 (after)
+ !  . Memory usage      : 1.6 MB (before), 1.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        193                 -
+ + New bound is 2; 252; 0
+ ! Using temporal relaxation.
+ *             2    2,459  0.70s        8      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 2; 252; 17.23333
+ ! Using failure-directed search.
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 1 solution found.
+ ! Best objective         : 2; 252; 17.23333 (gap is 100.0% @ crit. 3 of 3)
+ ! Best bound             : 2; 252; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 146,413,650
+ ! Number of fails        : 67,520,747
+ ! Total memory usage     : 40.7 MB (36.5 MB CP Optimizer + 4.1 MB Concert)
+ ! Time spent in solve    : 300.17s (300.12s engine + 0.04s extraction)
+ ! Search speed (br. / s) : 487,839.0
+ ! ----------------------------------------------------------------------------
+totVehicle  = 2
+totDistance = 252
+totCost  	 = 17.233333333
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S0	0	0	240	0	0	0	44	77	0	0
+D0	S0	0	0	240	0	0	0	65	77	0	0
+S0	C71	25	26	111	26	0	0	44	52	14	10
+S0	C21	45	55	185	55	0	0	65	32	10	10
+S11	C15	14	96	190	167	0	0	20	39	20	10
+S14	C97	24	58	131	111	0	0	55	14	35	10
+S19	DN	42	0	240	216	0	0	0	0	0	0
+C34	S19	9	0	240	87	98	27	0	15	0	0
+C21	S14	14	0	240	79	87	20	55	18	0	0
+C97	S11	12	0	240	133	153	51	20	2	0	0
+C71	C34	28	68	182	68	0	0	30	24	30	10
+C15	DN	39	0	240	216	0	0	0	0	0	0
+10	MCP-TOU2	rc108C5.txt	2	252	17.233333333	300.172	300	0
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 196 variables, 488 constraints
+ ! Presolve      : 268 extractables eliminated
+ ! TimeLimit            = 300
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 1,517.8 (before), 1,517.8 (after)
+ !  . Memory usage      : 1.6 MB (before), 1.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        196                 -
+ + New bound is 1; 185
+ ! Using temporal relaxation.
+ *             1    4,321  0.71s        3      (gap is 0.00%)
+   New objective is 1; 185
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 1; 185 (optimal)
+ ! Best bound             : 1; 185
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 132,974
+ ! Number of fails        : 63,833
+ ! Total memory usage     : 20.3 MB (16.0 MB CP Optimizer + 4.3 MB Concert)
+ ! Time spent in solve    : 0.88s (0.86s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 152,843.7
+ ! ----------------------------------------------------------------------------
+totVehicle  = 1
+totDistance = 185
+totCost  	 = 18.816666667
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S0	0	0	960	0	0	0	901	77	0	0
+S0	C4	36	712	832	722	0	0	62	36	40	10
+S0	C23	45	0	904	45	0	0	896	32	30	10
+S15	C81	34	0	937	146	0	0	114	14	10	10
+C23	C19	6	0	909	61	0	0	607	26	40	10
+C19	C49	2	0	911	73	0	0	211	24	10	10
+C49	S15	14	0	960	97	112	38	177	10	0	0
+C4	DN	36	0	960	953	0	0	2	0	0	0
+C81	S0	12	0	960	168	196	70	78	2	0	0
+11	Dist	rc204C5.txt	1	185	18.816666667	0.888	300	0
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 196 variables, 488 constraints
+ ! Presolve      : 268 extractables eliminated
+ ! TimeLimit            = 300
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 1,517.8 (before), 1,517.8 (after)
+ !  . Memory usage      : 1.6 MB (before), 1.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        196                 -
+ + New bound is 1; 185; 0
+ ! Using temporal relaxation.
+ *             1    4,579  0.72s        3      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 1; 185; 18.81666
+ *             1   16,392  0.72s        3      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 1; 185; 18.78333
+ *             1   16,490  0.72s        3      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 1; 185; 18.76666
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 3 solutions found.
+ ! Best objective         : 1; 185; 18.76666 (gap is 100.0% @ crit. 3 of 3)
+ ! Best bound             : 1; 185; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 112,292,984
+ ! Number of fails        : 51,153,241
+ ! Total memory usage     : 39.8 MB (35.3 MB CP Optimizer + 4.5 MB Concert)
+ ! Time spent in solve    : 300.03s (300.01s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 374,287.5
+ ! ----------------------------------------------------------------------------
+totVehicle  = 1
+totDistance = 185
+totCost  	 = 18.766666667
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S0	0	0	960	0	0	0	596	76	0	0
+S0	C4	36	712	832	716	0	0	190	36	40	10
+S0	C23	45	0	904	45	0	0	540	31	30	10
+S15	C81	34	0	937	148	0	0	200	18	10	10
+C23	C19	6	0	909	61	0	0	253	25	40	10
+C19	C49	2	0	911	73	0	0	210	23	10	10
+C49	S15	14	0	960	97	114	43	200	9	0	0
+C4	DN	36	0	960	886	0	0	123	0	0	0
+C81	S0	12	0	960	171	197	66	190	6	0	0
+11	MCP-TOU2	rc204C5.txt	1	185	18.766666667	300.036	300	0
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 160 variables, 400 constraints
+ ! Presolve      : 268 extractables eliminated
+ ! TimeLimit            = 300
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 1,192.7 (before), 1,192.7 (after)
+ !  . Memory usage      : 1.6 MB (before), 1.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        160                 -
+ + New bound is 1; 168
+ ! Using temporal relaxation.
+ *             1   25,814  0.94s        4      (gap is 0.00%)
+   New objective is 1; 168
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 1; 168 (optimal)
+ ! Best bound             : 1; 168
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 228,555
+ ! Number of fails        : 111,643
+ ! Total memory usage     : 18.0 MB (13.4 MB CP Optimizer + 4.7 MB Concert)
+ ! Time spent in solve    : 1.08s (1.07s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 213,403.4
+ ! ----------------------------------------------------------------------------
+totVehicle  = 1
+totDistance = 168
+totCost  	 = 16.6
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	C96	16	142	532	142	0	0	82	61	26	10
+S3	C37	8	59	632	214	0	0	36	66	10	10
+S19	C66	37	383	905	383	0	0	16	13	16	10
+C66	DN	13	0	960	406	0	0	0	0	0	0
+C37	C32	56	69	539	280	0	0	26	10	10	10
+C96	C41	21	73	561	173	0	0	56	40	20	10
+C41	S3	7	0	960	190	206	41	36	33	0	0
+C32	S19	10	0	960	300	320	50	16	0	0	0
+12	Dist	rc208C5.txt	1	168	16.6	1.086	300	0
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 160 variables, 400 constraints
+ ! Presolve      : 268 extractables eliminated
+ ! TimeLimit            = 300
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 1,192.7 (before), 1,192.7 (after)
+ !  . Memory usage      : 1.6 MB (before), 1.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        160                 -
+ + New bound is 1; 168; 0
+ ! Using temporal relaxation.
+ *             1   26,340  0.93s        4      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 1; 168; 16.60000
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 1 solution found.
+ ! Best objective         : 1; 168; 16.60000 (gap is 100.0% @ crit. 3 of 3)
+ ! Best bound             : 1; 168; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 116,733,127
+ ! Number of fails        : 53,696,998
+ ! Total memory usage     : 43.7 MB (38.9 MB CP Optimizer + 4.9 MB Concert)
+ ! Time spent in solve    : 300.03s (300.01s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 389,088.4
+ ! ----------------------------------------------------------------------------
+totVehicle  = 1
+totDistance = 168
+totCost  	 = 16.6
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	C96	16	142	532	142	0	0	82	61	26	10
+S3	C37	8	59	632	214	0	0	36	66	10	10
+S19	C66	37	383	905	383	0	0	16	13	16	10
+C66	DN	13	0	960	406	0	0	0	0	0	0
+C37	C32	56	69	539	280	0	0	26	10	10	10
+C96	C41	21	73	561	173	0	0	56	40	20	10
+C41	S3	7	0	960	190	206	41	36	33	0	0
+C32	S19	10	0	960	300	320	50	16	0	0	0
+12	MCP-TOU2	rc208C5.txt	1	168	16.6	300.032	300	0
+
+<<< setup
+
+m	inst	veh	dist	cost	Sec	limit	gap	bin
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 396 variables, 1,819 constraints
+ ! Presolve      : 59 extractables eliminated
+ ! TimeLimit            = 120
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.51s (0.51s extraction + 0.00s propagation)
+ !  . Log search space  : 3,298.5 (before), 3,298.5 (after)
+ !  . Memory usage      : 3.3 MB (before), 3.3 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        396                 -
+ + New bound is 0; 0
+ ! Using temporal relaxation.
+ *             5   15,104  3.40s        7      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 5; 624
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 1 solution found.
+ ! Best objective         : 5; 624 (gap is 100.0% @ crit. 1 of 2)
+ ! Best bound             : 0; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 16,985,086
+ ! Number of fails        : 7,175,590
+ ! Total memory usage     : 36.9 MB (36.6 MB CP Optimizer + 0.3 MB Concert)
+ ! Time spent in solve    : 120.29s (119.77s engine + 0.51s extraction)
+ ! Search speed (br. / s) : 141,803.5
+ ! ----------------------------------------------------------------------------
+totVehicle  = 5
+totDistance = 624
+totCost  	 = 602.833333333
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S0	0	0	1236	0	0	0	108	77	0	0
+D0	S0	0	0	1236	0	0	0	158	75	0	0
+D0	C95	37	274	330	274	0	0	190	41	30	90
+D0	C100	38	744	798	790	0	0	59	38	20	90
+D0	C27	17	263	311	263	0	0	190	61	10	90
+S0	C96	36	177	243	177	0	0	93	41	10	90
+S0	C98	31	181	247	220	0	0	142	42	20	90
+S1	C78	20	667	731	667	0	0	133	9	20	90
+S1	C54	55	810	868	810	0	0	41	6	40	90
+S3	C13	36	1042	1106	1060	0	0	31	31	30	90
+S3	C4	21	584	656	584	0	0	53	21	10	90
+S16	D0	43	0	1236	0	0	0	200	78	0	0
+S16	DN	43	0	1236	1186	0	0	0	0	0	0
+S20	D0	53	0	1236	0	0	0	200	78	0	0
+S20	DN	53	0	1236	1186	0	0	0	0	0	0
+C98	D0	31	0	1236	0	0	0	200	78	0	0
+C98	C89	18	929	989	988	0	0	109	24	10	90
+C78	D0	50	0	1236	0	0	0	200	78	0	0
+C78	S20	9	0	1236	766	950	53	53	0	0	0
+C4	D0	18	0	1236	0	0	0	200	78	0	0
+C4	S3	21	0	1236	695	928	67	31	0	0	0
+C13	DN	31	0	1236	1186	0	0	0	0	0	0
+C95	D0	37	0	1236	0	0	0	200	78	0	0
+C95	S1	32	0	1236	396	577	52	81	9	0	0
+C100	D0	38	0	1236	0	0	0	200	78	0	0
+C100	DN	38	0	1236	1186	0	0	0	0	0	0
+C54	D0	40	0	1236	0	0	0	200	78	0	0
+C54	S16	6	0	1236	906	1056	43	0	0	0	0
+C27	D0	17	0	1236	0	0	0	200	78	0	0
+C27	S1	54	0	1236	407	484	22	151	7	0	0
+C89	D0	24	0	1236	0	0	0	200	78	0	0
+C89	DN	24	0	1236	1186	0	0	0	0	0	0
+C96	D0	36	0	1236	0	0	0	200	78	0	0
+C96	S3	4	0	1236	271	289	5	75	37	0	0
+13	Dist	c101C10.txt	5	624	602.833333333	120.298	120	1
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 423 variables, 1,821 constraints
+ ! Presolve      : 59 extractables eliminated
+ ! Using starting point solution
+ ! TimeLimit            = 180
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.66s (0.66s extraction + 0.00s propagation)
+ !  . Log search space  : 3,563.6 (before), 3,563.6 (after)
+ !  . Memory usage      : 3.6 MB (before), 3.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        423                 -
+ + New bound is 5; 624; 0
+ ! Using temporal relaxation.
+ ! Starting point was completed to a full assignment.
+ *             5       40  1.08s        1      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 5; 624; 602.8333
+ *             5   16,573  2.60s        4      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 5; 624; 589.1500
+ *             5   16,807  2.94s        2      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 5; 624; 588.6166
+ *             5   22,286  3.22s        3      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 5; 624; 585.5166
+ *             5   1,064k  47.21s       2      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 5; 624; 584.6500
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 5 solutions found.
+ ! Best objective         : 5; 624; 584.6500 (gap is 100.0% @ crit. 3 of 3)
+ ! Best bound             : 5; 624; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 34,514,664
+ ! Number of fails        : 14,700,704
+ ! Total memory usage     : 39.3 MB (38.9 MB CP Optimizer + 0.4 MB Concert)
+ ! Time spent in solve    : 180.01s (179.34s engine + 0.66s extraction)
+ ! Search speed (br. / s) : 192,451.7
+ ! ----------------------------------------------------------------------------
+totVehicle  = 5
+totDistance = 624
+totCost  	 = 584.65
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S0	0	0	1236	0	0	0	50	77	0	0
+D0	S0	0	0	1236	0	0	0	30	73	0	0
+D0	C95	37	274	330	274	0	0	70	41	30	90
+D0	C100	38	744	798	744	0	0	20	38	20	90
+D0	C27	17	263	311	263	0	0	30	61	10	90
+S0	C96	36	177	243	177	0	0	50	41	10	90
+S0	C98	31	181	247	181	0	0	30	42	20	90
+S1	C78	20	667	731	667	0	0	20	9	20	90
+S1	C54	55	810	868	810	0	0	40	17	40	90
+S3	C13	36	1042	1106	1042	0	0	30	31	30	90
+S3	C4	21	584	656	584	0	0	40	28	10	90
+S16	D0	43	0	1236	0	0	0	200	78	0	0
+S16	DN	43	0	1236	1163	0	0	0	0	0	0
+S20	D0	53	0	1236	0	0	0	200	78	0	0
+S20	DN	53	0	1236	1163	0	0	0	0	0	0
+C98	D0	31	0	1236	0	0	0	200	78	0	0
+C98	C89	18	929	989	929	0	0	10	24	10	90
+C78	D0	50	0	1236	0	0	0	200	78	0	0
+C78	S20	9	0	1236	766	950	53	0	0	0	0
+C4	D0	18	0	1236	0	0	0	200	78	0	0
+C4	S3	21	0	1236	695	904	60	30	7	0	0
+C13	DN	31	0	1236	1163	0	0	0	0	0	0
+C95	D0	37	0	1236	0	0	0	200	78	0	0
+C95	S1	32	0	1236	396	615	63	40	9	0	0
+C100	D0	38	0	1236	0	0	0	200	78	0	0
+C100	DN	38	0	1236	1163	0	0	0	0	0	0
+C54	D0	40	0	1236	0	0	0	200	78	0	0
+C54	S16	6	0	1236	906	1018	32	0	11	0	0
+C27	D0	17	0	1236	0	0	0	200	78	0	0
+C27	S1	54	0	1236	407	484	22	20	7	0	0
+C89	D0	24	0	1236	0	0	0	200	78	0	0
+C89	DN	24	0	1236	1163	0	0	0	0	0	0
+C96	D0	36	0	1236	0	0	0	200	78	0	0
+C96	S3	4	0	1236	271	313	12	40	37	0	0
+13	MCP-TOU2	c101C10.txt	5	624	584.65	180.01	120	1
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 371 variables, 1,046 constraints
+ ! Presolve      : 119 extractables eliminated
+ ! TimeLimit            = 120
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.06s (0.06s extraction + 0.00s propagation)
+ !  . Log search space  : 3,089.9 (before), 3,089.9 (after)
+ !  . Memory usage      : 3.3 MB (before), 3.3 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        371                 -
+ + New bound is 0; 0
+ ! Using temporal relaxation.
+ *             5    5,132  1.55s        1      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 5; 679
+ *             4    7,871  2.92s        4      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 4; 556
+ *             4   37,803  12.80s       5      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 4; 555
+ *             3   87,381  26.60s       4      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 3; 427
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 4 solutions found.
+ ! Best objective         : 3; 427 (gap is 100.0% @ crit. 1 of 2)
+ ! Best bound             : 0; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 7,123,859
+ ! Number of fails        : 2,926,303
+ ! Total memory usage     : 35.3 MB (34.8 MB CP Optimizer + 0.6 MB Concert)
+ ! Time spent in solve    : 120.07s (120.00s engine + 0.06s extraction)
+ ! Search speed (br. / s) : 59,365.5
+ ! ----------------------------------------------------------------------------
+totVehicle  = 3
+totDistance = 427
+totCost  	 = 418.633333333
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S0	0	0	1236	0	0	0	191	76	0	0
+D0	S13	24	0	1236	24	104	23	125	54	0	0
+D0	C34	32	0	1113	32	0	0	165	46	20	90
+S0	DN	0	0	1236	1222	0	0	40	0	0	0
+S0	C96	36	177	243	218	0	0	189	40	10	90
+S3	C88	23	0	1119	979	0	0	78	27	30	90
+S13	C57	26	0	1111	649	0	0	101	37	40	90
+S13	C22	19	0	1133	123	0	0	124	58	20	90
+S18	C80	10	0	1094	628	0	0	90	64	10	90
+C72	S18	25	0	1236	361	618	74	90	0	0	0
+C34	C48	25	0	1122	147	0	0	115	21	10	90
+C80	S3	64	0	1236	782	956	50	78	0	0	0
+C3	DN	16	0	1236	1222	0	0	40	0	0	0
+C88	S0	27	0	1236	1096	1096	0	46	0	0	0
+C96	C3	23	0	1129	595	0	0	176	16	10	90
+C42	DN	19	0	1236	1222	0	0	40	0	0	0
+C22	C72	33	0	1122	246	0	0	102	25	10	90
+C57	C42	18	0	1126	994	0	0	61	19	20	90
+C48	S13	7	0	1236	244	415	49	101	14	0	0
+14	Dist	c104C10.txt	3	427	418.633333333	120.07	120	1
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 407 variables, 1,048 constraints
+ ! Presolve      : 119 extractables eliminated
+ ! Using starting point solution
+ ! TimeLimit            = 180
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.06s (0.06s extraction + 0.00s propagation)
+ !  . Log search space  : 3,441.5 (before), 3,441.5 (after)
+ !  . Memory usage      : 3.5 MB (before), 3.5 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        407                 -
+ + New bound is 3; 427; 0
+ ! Using temporal relaxation.
+ ! Starting point was completed to a full assignment.
+ *             3       32  0.44s        1      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 3; 427; 418.6333
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 1 solution found.
+ ! Best objective         : 3; 427; 418.6333 (gap is 100.0% @ crit. 3 of 3)
+ ! Best bound             : 3; 427; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 26,720,321
+ ! Number of fails        : 11,917,602
+ ! Total memory usage     : 38.6 MB (37.9 MB CP Optimizer + 0.6 MB Concert)
+ ! Time spent in solve    : 180.08s (180.01s engine + 0.06s extraction)
+ ! Search speed (br. / s) : 148,430.6
+ ! ----------------------------------------------------------------------------
+totVehicle  = 3
+totDistance = 427
+totCost  	 = 418.633333333
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S0	0	0	1236	0	0	0	20	75	0	0
+D0	S13	24	0	1236	24	104	23	70	54	0	0
+D0	C34	32	0	1113	32	0	0	90	46	20	90
+S0	DN	0	0	1236	1096	0	0	0	0	0	0
+S0	C96	36	177	243	177	0	0	20	39	10	90
+S3	C88	23	0	1119	979	0	0	30	27	30	90
+S13	C57	26	0	1111	441	0	0	60	37	40	90
+S13	C22	19	0	1133	123	0	0	70	58	20	90
+S18	C80	10	0	1094	628	0	0	40	64	10	90
+C72	S18	25	0	1236	361	618	74	40	0	0	0
+C34	C48	25	0	1122	147	0	0	70	21	10	90
+C80	S3	64	0	1236	782	956	50	30	0	0	0
+C3	DN	16	0	1236	1096	0	0	0	0	0	0
+C88	S0	27	0	1236	1096	1096	0	0	0	0	0
+C96	C3	23	0	1129	290	0	0	10	16	10	90
+C42	DN	19	0	1236	1096	0	0	0	0	0	0
+C22	C72	33	0	1122	246	0	0	50	25	10	90
+C57	C42	18	0	1126	549	0	0	20	19	20	90
+C48	S13	7	0	1236	244	415	49	60	14	0	0
+14	MCP-TOU2	c104C10.txt	3	427	418.633333333	180.088	120	1
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 392 variables, 1,532 constraints
+ ! Presolve      : 164 extractables eliminated
+ ! TimeLimit            = 120
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.32s (0.32s extraction + 0.00s propagation)
+ !  . Log search space  : 3,344.3 (before), 3,344.3 (after)
+ !  . Memory usage      : 3.4 MB (before), 3.4 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        392                 -
+ + New bound is 0; 0
+ ! Using temporal relaxation.
+ *             4   31,376  7.16s        7      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 4; 464
+ *             3   78,028  14.86s       7      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 3; 479
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 2 solutions found.
+ ! Best objective         : 3; 479 (gap is 100.0% @ crit. 1 of 2)
+ ! Best bound             : 0; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 9,565,822
+ ! Number of fails        : 3,943,489
+ ! Total memory usage     : 44.1 MB (43.2 MB CP Optimizer + 0.8 MB Concert)
+ ! Time spent in solve    : 120.20s (119.88s engine + 0.32s extraction)
+ ! Search speed (br. / s) : 79,791.7
+ ! ----------------------------------------------------------------------------
+totVehicle  = 3
+totDistance = 479
+totCost  	 = 656.916666667
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S15	24	0	3390	24	24	0	657	54	0	0
+D0	C57	35	0	3264	35	0	0	186	43	40	90
+D0	C10	17	28	188	84	0	0	514	61	10	90
+S0	C6	25	2544	2704	2544	0	0	153	41	20	90
+S0	C84	31	321	481	321	0	0	134	9	20	90
+S1	C96	19	1808	1968	1871	0	0	99	24	10	90
+S7	C30	28	2737	2897	2760	0	0	370	23	10	90
+S7	DN	38	0	3390	3227	0	0	89	0	0	0
+S13	DN	24	0	3390	3227	0	0	89	0	0	0
+S15	C8	34	12	172	58	0	0	307	20	20	90
+C96	DN	24	0	3390	3227	0	0	89	0	0	0
+C30	C24	7	2925	3085	2925	0	0	310	16	10	90
+C84	S1	9	0	3390	420	570	43	104	0	0	0
+C16	C25	19	1078	1238	1078	0	0	443	18	40	90
+C57	S0	35	0	3390	160	272	32	146	8	0	0
+C8	S0	12	0	3390	160	362	58	202	8	0	0
+C24	S13	16	0	3390	3031	3115	24	115	0	0	0
+C25	S7	17	0	3390	1185	1359	50	398	1	0	0
+C10	C16	24	693	853	693	0	0	492	37	40	90
+C6	S7	41	0	3390	2675	2807	38	111	0	0	0
+15	Dist	c202C10.txt	3	479	656.916666667	120.207	120	1
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 432 variables, 1,534 constraints
+ ! Presolve      : 164 extractables eliminated
+ ! Using starting point solution
+ ! TimeLimit            = 180
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.32s (0.32s extraction + 0.00s propagation)
+ !  . Log search space  : 3,737.5 (before), 3,737.5 (after)
+ !  . Memory usage      : 3.6 MB (before), 3.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        432                 -
+ + New bound is 3; 479; 0
+ ! Using temporal relaxation.
+ ! Starting point was completed to a full assignment.
+ *             3       39  0.71s        1      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 3; 479; 656.9166
+ *             3   10,547  1.79s        1      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 3; 479; 653.0166
+ *             3   11,929  1.79s        2      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 3; 479; 652.5833
+ *             3   57,855  4.31s        6      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 3; 479; 648.5166
+ *             3   78,793  4.80s        1      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 3; 479; 645.3666
+ *             3   81,195  5.04s        1      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 3; 479; 641.6166
+ *             3   89,303  5.28s        1      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 3; 479; 639.8166
+ *             3     221k  10.86s       6      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 3; 479; 627.5333
+ *             3   2,799k  124.57s      7      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 3; 479; 574.4500
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 9 solutions found.
+ ! Best objective         : 3; 479; 574.4500 (gap is 100.0% @ crit. 3 of 3)
+ ! Best bound             : 3; 479; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 33,077,734
+ ! Number of fails        : 14,940,186
+ ! Total memory usage     : 39.7 MB (38.7 MB CP Optimizer + 0.9 MB Concert)
+ ! Time spent in solve    : 180.14s (179.82s engine + 0.32s extraction)
+ ! Search speed (br. / s) : 183,949.1
+ ! ----------------------------------------------------------------------------
+totVehicle  = 3
+totDistance = 479
+totCost  	 = 574.45
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S15	24	0	3390	24	24	0	40	54	0	0
+D0	C57	35	0	3264	35	0	0	70	43	40	90
+D0	C10	17	28	188	28	0	0	110	61	10	90
+S0	C6	25	2544	2704	2544	0	0	20	41	20	90
+S0	C84	31	321	481	321	0	0	30	9	20	90
+S1	C96	19	1808	1968	1808	0	0	10	24	10	90
+S7	C30	28	2737	2897	2737	0	0	20	23	10	90
+S7	DN	38	0	3390	3139	0	0	0	0	0	0
+S13	DN	24	0	3390	3139	0	0	0	0	0	0
+S15	C8	34	12	172	58	0	0	40	20	20	90
+C96	DN	24	0	3390	3139	0	0	0	0	0	0
+C30	C24	7	2925	3085	2925	0	0	10	16	10	90
+C84	S1	9	0	3390	420	570	43	10	0	0	0
+C16	C25	19	1078	1238	1078	0	0	60	18	40	90
+C57	S0	35	0	3390	160	272	32	30	8	0	0
+C8	S0	12	0	3390	160	362	58	20	8	0	0
+C24	S13	16	0	3390	3031	3115	24	0	0	0	0
+C25	S7	17	0	3390	1185	1359	50	20	1	0	0
+C10	C16	24	693	853	693	0	0	100	37	40	90
+C6	S7	41	0	3390	2835	2967	38	0	0	0	0
+15	MCP-TOU2	c202C10.txt	3	479	574.45	180.149	120	1
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 280 variables, 1,214 constraints
+ ! Presolve      : 179 extractables eliminated
+ ! TimeLimit            = 120
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.23s (0.23s extraction + 0.00s propagation)
+ !  . Log search space  : 2,258.4 (before), 2,258.4 (after)
+ !  . Memory usage      : 3.3 MB (before), 3.3 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        280                 -
+ + New bound is 0; 0
+ ! Using temporal relaxation.
+ *             4    7,306  1.38s        4      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 4; 465
+ *             4   11,074  1.84s        5      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 4; 399
+ *             3   12,852  2.08s        4      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 3; 459
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 3 solutions found.
+ ! Best objective         : 3; 459 (gap is 100.0% @ crit. 1 of 2)
+ ! Best bound             : 0; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 15,052,287
+ ! Number of fails        : 6,354,115
+ ! Total memory usage     : 34.7 MB (33.6 MB CP Optimizer + 1.1 MB Concert)
+ ! Time spent in solve    : 120.01s (119.78s engine + 0.23s extraction)
+ ! Search speed (br. / s) : 125,661.9
+ ! ----------------------------------------------------------------------------
+totVehicle  = 3
+totDistance = 459
+totCost  	 = 635.166666667
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S15	24	0	3390	24	28	1	550	54	0	0
+D0	C8	12	12	332	186	0	0	664	66	20	90
+D0	C47	18	227	547	227	0	0	661	60	10	90
+S0	DN	0	0	3390	2981	0	0	60	0	0	0
+S0	C66	17	2633	2953	2652	0	0	106	17	10	90
+S3	C15	37	331	651	648	0	0	574	36	40	90
+S3	C99	3	810	1130	810	0	0	204	56	10	90
+S15	C75	39	1099	1419	1099	0	0	221	16	20	90
+S15	C60	21	1312	1632	1397	0	0	194	50	20	90
+C8	C9	12	138	458	296	0	0	438	54	10	90
+C9	C94	39	429	749	429	0	0	239	15	10	90
+C47	S3	54	0	3390	371	604	67	588	6	0	0
+C60	C56	5	1497	1817	1497	0	0	143	45	30	90
+C94	S3	8	0	3390	527	708	52	204	7	0	0
+C75	S0	16	0	3390	1205	1205	0	88	0	0	0
+C66	DN	17	0	3390	2981	0	0	60	0	0	0
+C99	S15	56	0	3390	956	1203	71	194	0	0	0
+C56	S0	45	0	3390	1632	1750	34	109	0	0	0
+C15	DN	36	0	3390	2981	0	0	60	0	0	0
+16	Dist	c205C10.txt	3	459	635.166666667	120.015	120	1
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 312 variables, 1,216 constraints
+ ! Presolve      : 179 extractables eliminated
+ ! Using starting point solution
+ ! TimeLimit            = 180
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.22s (0.22s extraction + 0.00s propagation)
+ !  . Log search space  : 2,556.6 (before), 2,556.6 (after)
+ !  . Memory usage      : 3.6 MB (before), 3.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        312                 -
+ + New bound is 3; 459; 0
+ ! Using temporal relaxation.
+ ! Starting point was completed to a full assignment.
+ *             3       26  0.54s        1      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 3; 459; 635.1666
+ *             3   24,711  2.29s        3      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 3; 459; 589.2333
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 2 solutions found.
+ ! Best objective         : 3; 459; 589.2333 (gap is 100.0% @ crit. 3 of 3)
+ ! Best bound             : 3; 459; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 43,280,462
+ ! Number of fails        : 19,774,731
+ ! Total memory usage     : 41.2 MB (40.1 MB CP Optimizer + 1.2 MB Concert)
+ ! Time spent in solve    : 180.23s (180.00s engine + 0.22s extraction)
+ ! Search speed (br. / s) : 240,436.3
+ ! ----------------------------------------------------------------------------
+totVehicle  = 3
+totDistance = 459
+totCost  	 = 589.233333333
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S15	24	0	3390	24	28	1	20	54	0	0
+D0	C8	12	12	332	12	0	0	110	66	20	90
+D0	C47	18	227	547	227	0	0	50	60	10	90
+S0	DN	0	0	3390	2740	0	0	0	0	0	0
+S0	C66	17	2633	2953	2633	0	0	10	17	10	90
+S3	C15	37	331	651	651	0	0	40	36	40	90
+S3	C99	3	810	1130	810	0	0	70	74	10	90
+S15	C75	39	1099	1419	1099	0	0	20	16	20	90
+S15	C60	21	1312	1632	1481	0	0	60	50	20	90
+C8	C9	12	138	458	138	0	0	90	54	10	90
+C9	C94	39	429	749	429	0	0	80	15	10	90
+C47	S3	54	0	3390	371	614	67	40	6	0	0
+C60	C56	5	1497	1817	1576	0	0	40	45	30	90
+C94	S3	8	0	3390	527	772	70	70	7	0	0
+C75	S0	16	0	3390	1205	1205	0	0	0	0	0
+C66	DN	17	0	3390	2740	0	0	0	0	0	0
+C99	S15	56	0	3390	1276	1460	53	60	18	0	0
+C56	S0	45	0	3390	1711	1829	34	10	0	0	0
+C15	DN	36	0	3390	2740	0	0	0	0	0	0
+16	MCP-TOU2	c205C10.txt	3	459	589.233333333	180.236	120	1
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 349 variables, 1,736 constraints
+ ! Presolve      : 343 extractables eliminated
+ ! TimeLimit            = 120
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.51s (0.51s extraction + 0.00s propagation)
+ !  . Log search space  : 2,661.5 (before), 2,661.5 (after)
+ !  . Memory usage      : 3.4 MB (before), 3.4 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        349                 -
+ + New bound is 0; 0
+ ! Using temporal relaxation.
+ *             5    4,014  1.47s        1      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 5; 464
+ *             5   11,542  2.15s        5      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 5; 444
+ ! Using failure-directed search.
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 2 solutions found.
+ ! Best objective         : 5; 444 (gap is 100.0% @ crit. 1 of 2)
+ ! Best bound             : 0; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 14,227,386
+ ! Number of fails        : 5,449,015
+ ! Total memory usage     : 35.2 MB (33.9 MB CP Optimizer + 1.3 MB Concert)
+ ! Time spent in solve    : 120.20s (119.68s engine + 0.51s extraction)
+ ! Search speed (br. / s) : 118,871.6
+ ! ----------------------------------------------------------------------------
+totVehicle  = 5
+totDistance = 444
+totCost  	 = 31.166666667
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S5	28	0	230	28	39	22	174	33	0	0
+D0	S17	32	0	230	32	39	14	179	29	0	0
+D0	S18	36	0	230	36	36	0	102	25	0	0
+D0	C31	17	25	35	25	0	0	194	44	27	10
+D0	C20	32	77	87	77	0	0	147	28	9	10
+S0	DN	0	0	230	221	0	0	10	0	0	0
+S0	C77	20	150	160	152	0	0	42	20	14	10
+S5	D0	28	0	230	0	0	0	200	61	0	0
+S5	C99	37	138	148	140	0	0	49	17	9	10
+S5	C88	10	166	176	170	0	0	64	19	9	10
+S17	D0	32	0	230	0	0	0	200	61	0	0
+S17	C12	28	177	187	181	0	0	152	15	19	10
+S18	C67	8	0	176	151	0	0	55	45	25	10
+S18	D0	36	0	230	0	0	0	200	61	0	0
+S18	C23	11	97	107	97	0	0	93	13	29	10
+C31	C60	23	0	201	58	0	0	84	21	3	10
+C23	S18	11	0	230	118	143	51	63	2	0	0
+C67	C21	27	0	201	188	0	0	28	18	11	10
+C60	S0	18	0	230	86	105	38	47	2	0	0
+C88	D0	19	0	230	0	0	0	200	61	0	0
+C88	DN	19	0	230	221	0	0	10	0	0	0
+C77	DN	20	0	230	221	0	0	10	0	0	0
+C20	S5	17	0	230	104	113	18	133	11	0	0
+C99	D0	17	0	230	0	0	0	200	61	0	0
+C99	DN	17	0	230	221	0	0	10	0	0	0
+C12	DN	15	0	230	221	0	0	10	0	0	0
+C21	D0	18	0	230	0	0	0	200	61	0	0
+C21	S0	18	0	230	216	216	0	12	0	0	0
+17	Dist	r102C10.txt	5	444	31.166666667	120.207	120	1
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 370 variables, 1,738 constraints
+ ! Presolve      : 343 extractables eliminated
+ ! Using starting point solution
+ ! TimeLimit            = 180
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.46s (0.46s extraction + 0.00s propagation)
+ !  . Log search space  : 2,825.3 (before), 2,825.3 (after)
+ !  . Memory usage      : 3.6 MB (before), 3.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        370                 -
+ + New bound is 5; 444; 0
+ ! Using temporal relaxation.
+ ! Starting point was completed to a full assignment.
+ *             5       40  0.85s        1      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 5; 444; 31.16666
+ *             5      939  0.85s        1      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 5; 444; 30.88333
+ ! Using failure-directed search.
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 2 solutions found.
+ ! Best objective         : 5; 444; 30.88333 (gap is 100.0% @ crit. 3 of 3)
+ ! Best bound             : 5; 444; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 39,905,733
+ ! Number of fails        : 17,847,539
+ ! Total memory usage     : 37.9 MB (36.5 MB CP Optimizer + 1.4 MB Concert)
+ ! Time spent in solve    : 180.16s (179.70s engine + 0.46s extraction)
+ ! Search speed (br. / s) : 222,068.6
+ ! ----------------------------------------------------------------------------
+totVehicle  = 5
+totDistance = 444
+totCost  	 = 30.883333333
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S5	28	0	230	28	39	22	56	32	0	0
+D0	S17	32	0	230	32	39	14	192	29	0	0
+D0	S18	36	0	230	36	53	34	101	25	0	0
+D0	C31	17	25	35	25	0	0	150	43	27	10
+D0	C20	32	77	87	77	0	0	87	28	9	10
+S0	DN	0	0	230	224	0	0	0	0	0	0
+S0	C77	20	150	160	153	0	0	37	20	14	10
+S5	D0	28	0	230	0	0	0	200	61	0	0
+S5	C99	37	138	148	145	0	0	37	17	9	10
+S5	C88	10	166	176	173	0	0	14	19	9	10
+S17	D0	32	0	230	0	0	0	200	61	0	0
+S17	C12	28	177	187	184	0	0	179	15	19	10
+S18	C67	8	0	176	134	0	0	36	45	25	10
+S18	D0	36	0	230	0	0	0	200	61	0	0
+S18	C23	11	97	107	97	0	0	76	48	29	10
+C31	C60	23	0	201	58	0	0	120	20	3	10
+C23	S18	11	0	230	118	126	16	37	37	0	0
+C67	C21	27	0	201	171	0	0	11	18	11	10
+C60	S0	18	0	230	86	105	38	117	2	0	0
+C88	D0	19	0	230	0	0	0	200	61	0	0
+C88	DN	19	0	230	224	0	0	0	0	0	0
+C77	DN	20	0	230	224	0	0	0	0	0	0
+C20	S5	17	0	230	104	113	18	67	11	0	0
+C99	D0	17	0	230	0	0	0	200	61	0	0
+C99	DN	17	0	230	224	0	0	0	0	0	0
+C12	DN	15	0	230	224	0	0	0	0	0	0
+C21	D0	18	0	230	0	0	0	200	61	0	0
+C21	S0	18	0	230	199	199	0	0	0	0	0
+17	MCP-TOU2	r102C10.txt	5	444	30.883333333	180.162	120	1
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 313 variables, 1,035 constraints
+ ! Presolve      : 452 extractables eliminated
+ ! TimeLimit            = 120
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.15s (0.15s extraction + 0.00s propagation)
+ !  . Log search space  : 2,399.7 (before), 2,399.7 (after)
+ !  . Memory usage      : 3.3 MB (before), 3.3 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        313                 -
+ + New bound is 0; 0
+ ! Using temporal relaxation.
+ *             5    1,513  0.40s        5      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 5; 380
+ *             3    4,236  1.32s        1      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 3; 336
+ ! Using failure-directed search.
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 2 solutions found.
+ ! Best objective         : 3; 336 (gap is 100.0% @ crit. 1 of 2)
+ ! Best bound             : 0; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 11,308,509
+ ! Number of fails        : 4,643,995
+ ! Total memory usage     : 32.5 MB (31.0 MB CP Optimizer + 1.6 MB Concert)
+ ! Time spent in solve    : 120.20s (120.05s engine + 0.15s extraction)
+ ! Search speed (br. / s) : 94,193.6
+ ! ----------------------------------------------------------------------------
+totVehicle  = 3
+totDistance = 336
+totCost  	 = 33.983333333
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S13	19	0	230	19	19	0	155	42	0	0
+D0	C81	28	0	192	28	0	0	197	33	26	10
+D0	C45	29	0	190	29	0	0	199	32	16	10
+S0	C18	16	0	204	120	0	0	167	33	12	10
+S0	C84	24	96	106	106	0	0	171	13	7	10
+S9	DN	21	0	230	227	0	0	25	0	0	0
+S9	C83	5	0	198	135	0	0	80	18	11	10
+S13	C16	11	71	81	72	0	0	142	31	19	10
+S13	C26	25	0	208	206	0	0	63	11	17	10
+C91	D0	26	0	230	0	0	0	200	61	0	0
+C91	S9	23	0	230	120	130	20	81	3	0	0
+C84	D0	24	0	230	0	0	0	200	61	0	0
+C84	S9	12	0	230	128	138	20	59	1	0	0
+C53	C27	9	173	183	177	0	0	61	5	16	10
+C18	C53	19	0	215	154	0	0	105	14	14	10
+C27	DN	5	0	230	227	0	0	25	0	0	0
+C81	S0	28	0	230	66	82	32	171	5	0	0
+C83	D0	21	0	230	0	0	0	200	61	0	0
+C83	S13	17	0	230	162	180	36	67	1	0	0
+C45	D0	29	0	230	0	0	0	200	61	0	0
+C45	S0	29	0	230	68	91	46	183	3	0	0
+C26	DN	11	0	230	227	0	0	25	0	0	0
+C16	D0	29	0	230	0	0	0	200	61	0	0
+C16	C91	5	87	97	87	0	0	101	26	1	10
+18	Dist	r103C10.txt	3	336	33.983333333	120.206	120	1
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 339 variables, 1,037 constraints
+ ! Presolve      : 452 extractables eliminated
+ ! Using starting point solution
+ ! TimeLimit            = 180
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.13s (0.13s extraction + 0.00s propagation)
+ !  . Log search space  : 2,603.3 (before), 2,603.3 (after)
+ !  . Memory usage      : 3.6 MB (before), 3.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        339                 -
+ + New bound is 3; 336; 0
+ ! Using temporal relaxation.
+ ! Starting point was completed to a full assignment.
+ *             3       24  0.44s        1      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 3; 336; 33.98333
+ *             3      942  0.44s        1      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 3; 336; 33.85000
+ ! Using failure-directed search.
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 2 solutions found.
+ ! Best objective         : 3; 336; 33.85000 (gap is 100.0% @ crit. 3 of 3)
+ ! Best bound             : 3; 336; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 55,550,952
+ ! Number of fails        : 25,333,252
+ ! Total memory usage     : 36.2 MB (34.6 MB CP Optimizer + 1.6 MB Concert)
+ ! Time spent in solve    : 180.22s (180.09s engine + 0.13s extraction)
+ ! Search speed (br. / s) : 308,455.3
+ ! ----------------------------------------------------------------------------
+totVehicle  = 3
+totDistance = 336
+totCost  	 = 33.85
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S13	19	0	230	19	28	18	194	41	0	0
+D0	C81	28	0	192	28	0	0	180	33	26	10
+D0	C45	29	0	190	29	0	0	194	32	16	10
+S0	C18	16	0	204	107	0	0	44	33	12	10
+S0	C84	24	96	106	106	0	0	13	13	7	10
+S9	DN	21	0	230	226	0	0	0	0	0	0
+S9	C83	5	0	198	126	0	0	116	17	11	10
+S13	C16	11	71	81	71	0	0	174	48	19	10
+S13	C26	25	0	208	196	0	0	36	11	17	10
+C91	D0	26	0	230	0	0	0	200	61	0	0
+C91	S9	23	0	230	120	121	2	129	20	0	0
+C84	D0	24	0	230	0	0	0	200	61	0	0
+C84	S9	12	0	230	128	138	20	0	1	0	0
+C53	C27	9	173	183	179	0	0	16	5	16	10
+C18	C53	19	0	215	155	0	0	32	14	14	10
+C27	DN	5	0	230	226	0	0	0	0	0	0
+C81	S0	28	0	230	66	82	32	102	5	0	0
+C83	D0	21	0	230	0	0	0	200	61	0	0
+C83	S13	17	0	230	153	171	36	104	0	0	0
+C45	D0	29	0	230	0	0	0	200	61	0	0
+C45	S0	29	0	230	68	91	46	48	3	0	0
+C26	DN	11	0	230	226	0	0	0	0	0	0
+C16	D0	29	0	230	0	0	0	200	61	0	0
+C16	C91	5	87	97	87	0	0	140	43	1	10
+18	MCP-TOU2	r103C10.txt	3	336	33.85	180.228	120	1
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 337 variables, 1,353 constraints
+ ! Presolve      : 460 extractables eliminated
+ ! TimeLimit            = 120
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.28s (0.28s extraction + 0.00s propagation)
+ !  . Log search space  : 2,763.9 (before), 2,763.9 (after)
+ !  . Memory usage      : 3.3 MB (before), 3.3 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        337                 -
+ + New bound is 0; 0
+ ! Using temporal relaxation.
+ *             5    3,630  1.47s        3      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 5; 384
+ *             5    4,026  1.47s        4      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 5; 376
+ *             4    3,692  1.47s        5      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 4; 400
+ *             4   13,251  2.58s        3      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 4; 360
+ *             4   20,944  4.43s        7      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 4; 353
+ *             3   29,083  5.68s        1      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 3; 461
+ *             3   73,166  11.40s       4      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 3; 326
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 7 solutions found.
+ ! Best objective         : 3; 326 (gap is 100.0% @ crit. 1 of 2)
+ ! Best bound             : 0; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 10,364,498
+ ! Number of fails        : 4,251,031
+ ! Total memory usage     : 44.2 MB (42.4 MB CP Optimizer + 1.9 MB Concert)
+ ! Time spent in solve    : 120.12s (119.84s engine + 0.28s extraction)
+ ! Search speed (br. / s) : 86,482.5
+ ! ----------------------------------------------------------------------------
+totVehicle  = 3
+totDistance = 326
+totCost  	 = 51.183333333
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S13	19	0	1000	19	19	0	688	25	0	0
+D0	C77	20	86	224	86	0	0	1000	41	14	10
+D0	C100	24	118	148	118	0	0	999	37	17	10
+S0	C28	6	357	495	492	0	0	937	29	16	10
+S0	C94	12	534	642	534	0	0	127	35	27	10
+S5	C31	10	591	809	698	0	0	59	18	27	10
+S5	C32	10	501	621	599	0	0	88	10	23	10
+S13	DN	19	0	1000	842	0	0	13	0	0	0
+S13	C84	13	314	448	356	0	0	959	29	7	10
+S15	C72	13	104	252	156	0	0	731	23	25	10
+C77	S15	33	0	1000	129	143	28	977	8	0	0
+C50	DN	17	0	1000	842	0	0	13	0	0	0
+C18	S0	16	0	1000	429	447	35	937	0	0	0
+C28	C50	12	507	599	555	0	0	229	17	13	10
+C32	S5	10	0	1000	619	633	28	61	0	0	0
+C31	DN	17	0	1000	842	0	0	13	0	0	0
+C84	C18	13	403	513	403	0	0	952	16	12	10
+C72	S0	22	0	1000	188	211	46	143	1	0	0
+C94	S5	35	0	1000	579	589	20	100	0	0	0
+C100	S13	5	0	1000	133	138	10	979	32	0	0
+19	Dist	r201C10.txt	3	326	51.183333333	120.127	120	1
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 373 variables, 1,355 constraints
+ ! Presolve      : 460 extractables eliminated
+ ! Using starting point solution
+ ! TimeLimit            = 180
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.26s (0.26s extraction + 0.00s propagation)
+ !  . Log search space  : 3,109.5 (before), 3,109.5 (after)
+ !  . Memory usage      : 3.6 MB (before), 3.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        373                 -
+ + New bound is 3; 326; 0
+ ! Using temporal relaxation.
+ ! Starting point was completed to a full assignment.
+ *             3       37  0.62s        1      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 3; 326; 51.18333
+ *             3   12,883  1.68s        1      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 3; 326; 50.48333
+ *             3   15,884  2.04s        2      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 3; 326; 48.65000
+ *             3   28,095  2.66s        6      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 3; 326; 48.33333
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 4 solutions found.
+ ! Best objective         : 3; 326; 48.33333 (gap is 100.0% @ crit. 3 of 3)
+ ! Best bound             : 3; 326; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 35,676,925
+ ! Number of fails        : 16,201,949
+ ! Total memory usage     : 37.7 MB (35.8 MB CP Optimizer + 1.9 MB Concert)
+ ! Time spent in solve    : 180.19s (179.92s engine + 0.26s extraction)
+ ! Search speed (br. / s) : 198,285.6
+ ! ----------------------------------------------------------------------------
+totVehicle  = 3
+totDistance = 326
+totCost  	 = 48.333333333
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S13	19	0	1000	19	19	0	263	42	0	0
+D0	C77	20	86	224	86	0	0	260	41	14	10
+D0	C100	24	118	148	118	0	0	993	37	17	10
+S0	C28	6	357	495	483	0	0	425	30	16	10
+S0	C94	12	534	642	534	0	0	221	35	27	10
+S5	C31	10	591	809	721	0	0	73	17	27	10
+S5	C32	10	501	621	599	0	0	155	10	23	10
+S13	DN	19	0	1000	791	0	0	1	0	0	0
+S13	C84	13	314	448	375	0	0	971	47	7	10
+S15	C72	13	104	252	156	0	0	246	23	25	10
+C77	S15	33	0	1000	129	143	28	246	8	0	0
+C50	DN	17	0	1000	791	0	0	1	0	0	0
+C18	S0	16	0	1000	429	438	18	437	18	0	0
+C28	C50	12	507	599	532	0	0	121	18	13	10
+C32	S5	10	0	1000	619	633	27	115	0	0	0
+C31	DN	17	0	1000	791	0	0	1	0	0	0
+C84	C18	13	403	513	403	0	0	946	34	12	10
+C72	S0	22	0	1000	188	211	46	221	1	0	0
+C94	S5	35	0	1000	579	589	20	191	0	0	0
+C100	S13	5	0	1000	133	147	28	973	32	0	0
+19	MCP-TOU2	r201C10.txt	3	326	48.333333333	180.192	120	1
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 424 variables, 1,164 constraints
+ ! Presolve      : 481 extractables eliminated
+ ! TimeLimit            = 120
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.06s (0.06s extraction + 0.00s propagation)
+ !  . Log search space  : 3,637.6 (before), 3,637.6 (after)
+ !  . Memory usage      : 3.6 MB (before), 3.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        424                 -
+ + New bound is 0; 0
+ ! Using temporal relaxation.
+ *             4     116k  38.22s       6      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 4; 448
+ *             2     332k  98.14s       6      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 2; 329
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 2 solutions found.
+ ! Best objective         : 2; 329 (gap is 100.0% @ crit. 1 of 2)
+ ! Best bound             : 0; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 3,117,893
+ ! Number of fails        : 1,545,050
+ ! Total memory usage     : 35.3 MB (33.2 MB CP Optimizer + 2.1 MB Concert)
+ ! Time spent in solve    : 120.08s (120.01s engine + 0.06s extraction)
+ ! Search speed (br. / s) : 25,979.8
+ ! ----------------------------------------------------------------------------
+totVehicle  = 2
+totDistance = 329
+totCost  	 = 44.966666667
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	C5	21	21	182	21	0	0	62	40	26	10
+D0	C75	28	0	962	28	0	0	47	33	18	10
+S0	C57	23	0	966	115	0	0	29	34	7	10
+S4	C78	15	648	826	648	0	0	3	31	3	10
+S7	C69	22	0	977	128	0	0	24	32	6	10
+S9	C61	18	329	551	329	0	0	22	39	13	10
+C84	DN	24	0	1000	689	0	0	0	0	0	0
+C11	S7	4	0	1000	80	106	53	24	1	0	0
+C57	S9	34	0	1000	159	187	57	22	0	0	0
+C78	DN	31	0	1000	689	0	0	0	0	0	0
+C69	C71	29	0	950	167	0	0	18	3	15	10
+C5	C11	35	0	956	66	0	0	36	5	12	10
+C61	C17	9	0	959	348	0	0	9	30	2	10
+C75	S0	28	0	1000	66	92	52	29	5	0	0
+C71	S4	2	0	1000	179	202	45	3	1	0	0
+C17	C84	6	0	965	364	0	0	7	24	7	10
+20	Dist	r203C10.txt	2	329	44.966666667	120.082	120	1
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 464 variables, 1,166 constraints
+ ! Presolve      : 481 extractables eliminated
+ ! Using starting point solution
+ ! TimeLimit            = 180
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.06s (0.06s extraction + 0.00s propagation)
+ !  . Log search space  : 4,036.0 (before), 4,036.0 (after)
+ !  . Memory usage      : 3.8 MB (before), 3.8 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        464                 -
+ + New bound is 2; 329; 0
+ ! Using temporal relaxation.
+ ! Starting point was completed to a full assignment.
+ *             2       50  0.48s        1      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 2; 329; 44.96666
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 1 solution found.
+ ! Best objective         : 2; 329; 44.96666 (gap is 100.0% @ crit. 3 of 3)
+ ! Best bound             : 2; 329; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 34,781,091
+ ! Number of fails        : 15,311,471
+ ! Total memory usage     : 57.2 MB (55.0 MB CP Optimizer + 2.2 MB Concert)
+ ! Time spent in solve    : 180.02s (179.96s engine + 0.06s extraction)
+ ! Search speed (br. / s) : 193,269.1
+ ! ----------------------------------------------------------------------------
+totVehicle  = 2
+totDistance = 329
+totCost  	 = 44.966666667
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	C5	21	21	182	21	0	0	62	39	26	10
+D0	C75	28	0	962	28	0	0	47	32	18	10
+S0	C57	23	0	966	115	0	0	29	34	7	10
+S4	C78	15	648	826	648	0	0	3	31	3	10
+S7	C69	22	0	977	128	0	0	24	31	6	10
+S9	C61	18	329	551	329	0	0	22	39	13	10
+C84	DN	24	0	1000	689	0	0	0	0	0	0
+C11	S7	4	0	1000	80	106	53	24	0	0	0
+C57	S9	34	0	1000	159	187	57	22	0	0	0
+C78	DN	31	0	1000	689	0	0	0	0	0	0
+C69	C71	29	0	950	167	0	0	18	2	15	10
+C5	C11	35	0	956	66	0	0	36	4	12	10
+C61	C17	9	0	959	348	0	0	9	30	2	10
+C75	S0	28	0	1000	66	92	53	29	4	0	0
+C71	S4	2	0	1000	179	202	46	3	0	0	0
+C17	C84	6	0	965	364	0	0	7	24	7	10
+20	MCP-TOU2	r203C10.txt	2	329	44.966666667	180.028	120	1
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 338 variables, 1,906 constraints
+ ! Presolve      : 623 extractables eliminated
+ ! TimeLimit            = 120
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.54s (0.54s extraction + 0.00s propagation)
+ !  . Log search space  : 2,595.0 (before), 2,595.0 (after)
+ !  . Memory usage      : 3.6 MB (before), 3.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        338                 -
+ + New bound is 0; 0
+ ! Using temporal relaxation.
+ *             5   14,877  3.34s        7      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 5; 627
+ *             5   13,034  3.58s        8      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 5; 493
+ ! Using failure-directed search.
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 2 solutions found.
+ ! Best objective         : 5; 493 (gap is 100.0% @ crit. 1 of 2)
+ ! Best bound             : 0; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 16,156,134
+ ! Number of fails        : 6,192,967
+ ! Total memory usage     : 37.2 MB (34.9 MB CP Optimizer + 2.4 MB Concert)
+ ! Time spent in solve    : 120.26s (119.72s engine + 0.54s extraction)
+ ! Search speed (br. / s) : 134,948.2
+ ! ----------------------------------------------------------------------------
+totVehicle  = 5
+totDistance = 493
+totCost  	 = 22.9
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	C70	20	83	113	110	0	0	69	55	23	10
+D0	C57	27	27	57	39	0	0	198	51	23	10
+D0	C45	38	53	83	53	0	0	160	40	10	10
+D0	C11	34	86	116	112	0	0	60	44	40	10
+D0	C44	35	36	66	36	0	0	85	43	10	10
+S0	DN	0	0	240	219	0	0	0	0	0	0
+S0	DN	0	0	240	219	0	0	0	0	0	0
+S1	C26	28	121	151	127	0	0	66	19	30	10
+S15	C92	22	140	170	141	0	0	35	22	14	10
+S15	DN	24	0	240	219	0	0	0	0	0	0
+S19	D0	42	0	240	0	0	0	200	78	0	0
+S19	DN	42	0	240	219	0	0	0	0	0	0
+C70	C54	22	170	200	170	0	0	23	30	16	10
+C57	D0	27	0	240	0	0	0	200	78	0	0
+C57	C49	18	85	115	85	0	0	171	33	10	10
+C49	D0	38	0	240	0	0	0	200	78	0	0
+C49	S15	14	0	240	109	119	25	149	19	0	0
+C45	D0	38	0	240	0	0	0	200	78	0	0
+C45	S0	38	0	240	101	101	0	20	1	0	0
+C54	S0	18	0	240	198	198	0	7	1	0	0
+C92	S15	22	0	240	173	183	24	17	0	0	0
+C26	D0	59	0	240	0	0	0	200	78	0	0
+C26	S19	18	0	240	155	171	41	4	1	0	0
+C11	D0	34	0	240	0	0	0	200	78	0	0
+C11	C53	16	0	210	174	0	0	9	24	5	10
+C53	DN	20	0	240	219	0	0	0	0	0	0
+C44	D0	35	0	240	0	0	0	200	78	0	0
+C44	S1	37	0	240	83	99	41	71	6	0	0
+21	Dist	rc102C10.txt	5	493	22.9	120.265	120	1
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 363 variables, 1,908 constraints
+ ! Presolve      : 623 extractables eliminated
+ ! Using starting point solution
+ ! TimeLimit            = 180
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.54s (0.54s extraction + 0.00s propagation)
+ !  . Log search space  : 2,791.0 (before), 2,791.0 (after)
+ !  . Memory usage      : 3.8 MB (before), 3.8 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        363                 -
+ + New bound is 5; 493; 0
+ ! Using temporal relaxation.
+ ! Starting point was completed to a full assignment.
+ *             5       41  0.95s        1      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 5; 493; 22.90000
+ ! Using failure-directed search.
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 1 solution found.
+ ! Best objective         : 5; 493; 22.90000 (gap is 100.0% @ crit. 3 of 3)
+ ! Best bound             : 5; 493; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 49,452,056
+ ! Number of fails        : 21,071,020
+ ! Total memory usage     : 42.1 MB (39.7 MB CP Optimizer + 2.4 MB Concert)
+ ! Time spent in solve    : 180.16s (179.61s engine + 0.54s extraction)
+ ! Search speed (br. / s) : 275,324.1
+ ! ----------------------------------------------------------------------------
+totVehicle  = 5
+totDistance = 493
+totCost  	 = 22.9
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	C70	20	83	113	83	0	0	39	40	23	10
+D0	C57	27	27	57	27	0	0	47	51	23	10
+D0	C45	38	53	83	53	0	0	10	38	10	10
+D0	C11	34	86	116	86	0	0	45	36	40	10
+D0	C44	35	36	66	36	0	0	40	43	10	10
+S0	DN	0	0	240	213	0	0	0	0	0	0
+S0	DN	0	0	240	213	0	0	0	0	0	0
+S1	C26	28	121	151	127	0	0	30	19	30	10
+S15	C92	22	140	170	141	0	0	14	22	14	10
+S15	DN	24	0	240	213	0	0	0	0	0	0
+S19	D0	42	0	240	0	0	0	200	78	0	0
+S19	DN	42	0	240	213	0	0	0	0	0	0
+C70	C54	22	170	200	170	0	0	16	18	16	10
+C57	D0	27	0	240	0	0	0	200	78	0	0
+C57	C49	18	85	115	85	0	0	24	33	10	10
+C49	D0	38	0	240	0	0	0	200	78	0	0
+C49	S15	14	0	240	109	119	25	14	19	0	0
+C45	D0	38	0	240	0	0	0	200	78	0	0
+C45	S0	38	0	240	101	101	0	0	0	0	0
+C54	S0	18	0	240	198	198	0	0	0	0	0
+C92	S15	22	0	240	173	183	24	0	0	0	0
+C26	D0	59	0	240	0	0	0	200	78	0	0
+C26	S19	18	0	240	155	171	41	0	1	0	0
+C11	D0	34	0	240	0	0	0	200	78	0	0
+C11	C53	16	0	210	112	0	0	5	20	5	10
+C53	DN	20	0	240	213	0	0	0	0	0	0
+C44	D0	35	0	240	0	0	0	200	78	0	0
+C44	S1	37	0	240	83	99	41	30	6	0	0
+21	MCP-TOU2	rc102C10.txt	5	493	22.9	180.16	120	1
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 363 variables, 1,440 constraints
+ ! Presolve      : 832 extractables eliminated
+ ! TimeLimit            = 120
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.29s (0.29s extraction + 0.00s propagation)
+ !  . Log search space  : 2,800.7 (before), 2,800.7 (after)
+ !  . Memory usage      : 3.6 MB (before), 3.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        363                 -
+ + New bound is 0; 0
+ ! Using temporal relaxation.
+ *             5   12,460  2.48s        4      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 5; 629
+ ! Using failure-directed search.
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 1 solution found.
+ ! Best objective         : 5; 629 (gap is 100.0% @ crit. 1 of 2)
+ ! Best bound             : 0; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 12,886,657
+ ! Number of fails        : 5,070,657
+ ! Total memory usage     : 37.9 MB (35.3 MB CP Optimizer + 2.6 MB Concert)
+ ! Time spent in solve    : 120.30s (120.00s engine + 0.29s extraction)
+ ! Search speed (br. / s) : 107,385.2
+ ! ----------------------------------------------------------------------------
+totVehicle  = 5
+totDistance = 629
+totCost  	 = 42.316666667
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S0	0	0	240	0	0	0	197	77	0	0
+D0	S0	0	0	240	0	0	0	200	77	0	0
+D0	S5	35	0	240	35	45	25	105	43	0	0
+D0	C45	38	38	192	38	0	0	193	40	10	10
+D0	C80	8	8	150	106	0	0	173	69	13	10
+S0	C65	11	12	109	12	0	0	197	66	16	10
+S0	C93	21	22	101	22	0	0	198	56	3	10
+S3	C85	59	36	194	150	0	0	176	16	2	10
+S3	C35	10	61	185	112	0	0	124	36	20	10
+S5	C79	30	39	151	151	0	0	35	38	30	10
+S5	DN	35	0	240	236	0	0	3	0	0	0
+S19	DN	42	0	240	236	0	0	3	0	0	0
+S19	C28	15	74	174	94	0	0	29	56	10	10
+C83	C86	17	125	197	193	0	0	52	32	28	10
+C45	D0	38	0	240	0	0	0	200	78	0	0
+C45	S3	37	0	240	85	102	43	136	3	0	0
+C35	D0	44	0	240	0	0	0	200	78	0	0
+C35	S5	36	0	240	158	172	35	43	0	0	0
+C28	DN	56	0	240	236	0	0	3	0	0	0
+C79	DN	38	0	240	236	0	0	3	0	0	0
+C65	S3	47	0	240	69	91	56	180	19	0	0
+C93	S19	27	0	240	59	76	42	183	29	0	0
+C85	S19	16	0	240	176	193	42	147	0	0	0
+C80	C83	19	74	192	166	0	0	105	50	14	10
+C86	DN	32	0	240	236	0	0	3	0	0	0
+22	Dist	rc108C10.txt	5	629	42.316666667	120.303	120	1
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 396 variables, 1,442 constraints
+ ! Presolve      : 832 extractables eliminated
+ ! Using starting point solution
+ ! TimeLimit            = 180
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.31s (0.31s extraction + 0.00s propagation)
+ !  . Log search space  : 3,058.7 (before), 3,058.7 (after)
+ !  . Memory usage      : 3.8 MB (before), 3.8 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        396                 -
+ + New bound is 5; 629; 0
+ ! Using temporal relaxation.
+ ! Starting point was completed to a full assignment.
+ *             5       34  0.69s        1      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 5; 629; 42.31666
+ ! Using failure-directed search.
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 1 solution found.
+ ! Best objective         : 5; 629; 42.31666 (gap is 100.0% @ crit. 3 of 3)
+ ! Best bound             : 5; 629; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 21,658,861
+ ! Number of fails        : 9,462,041
+ ! Total memory usage     : 40.8 MB (38.1 MB CP Optimizer + 2.7 MB Concert)
+ ! Time spent in solve    : 180.28s (179.97s engine + 0.31s extraction)
+ ! Search speed (br. / s) : 120,346.4
+ ! ----------------------------------------------------------------------------
+totVehicle  = 5
+totDistance = 629
+totCost  	 = 42.316666667
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S0	0	0	240	0	0	0	18	77	0	0
+D0	S0	0	0	240	0	0	0	13	76	0	0
+D0	S5	35	0	240	35	45	25	30	43	0	0
+D0	C45	38	38	192	38	0	0	30	40	10	10
+D0	C80	8	8	150	8	0	0	55	68	13	10
+S0	C65	11	12	109	12	0	0	18	66	16	10
+S0	C93	21	22	101	22	0	0	13	55	3	10
+S3	C85	59	36	194	150	0	0	2	16	2	10
+S3	C35	10	61	185	112	0	0	20	36	20	10
+S5	C79	30	39	151	75	0	0	30	38	30	10
+S5	DN	35	0	240	235	0	0	0	0	0	0
+S19	DN	42	0	240	235	0	0	0	0	0	0
+S19	C28	15	74	174	91	0	0	10	56	10	10
+C83	C86	17	125	197	125	0	0	28	32	28	10
+C45	D0	38	0	240	0	0	0	200	78	0	0
+C45	S3	37	0	240	85	102	43	20	3	0	0
+C35	D0	44	0	240	0	0	0	200	78	0	0
+C35	S5	36	0	240	158	172	35	0	0	0	0
+C28	DN	56	0	240	235	0	0	0	0	0	0
+C79	DN	38	0	240	235	0	0	0	0	0	0
+C65	S3	47	0	240	69	91	56	2	19	0	0
+C93	S19	27	0	240	59	76	43	10	28	0	0
+C85	S19	16	0	240	176	193	42	0	0	0	0
+C80	C83	19	74	192	74	0	0	42	49	14	10
+C86	DN	32	0	240	235	0	0	0	0	0	0
+22	MCP-TOU2	rc108C10.txt	5	629	42.316666667	180.286	120	1
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 332 variables, 1,385 constraints
+ ! Presolve      : 835 extractables eliminated
+ ! TimeLimit            = 120
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.28s (0.28s extraction + 0.00s propagation)
+ !  . Log search space  : 2,725.7 (before), 2,725.7 (after)
+ !  . Memory usage      : 3.6 MB (before), 3.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        332                 -
+ + New bound is 0; 0
+ ! Using temporal relaxation.
+ *             5    3,096  1.24s        6      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 5; 641
+ *             5    3,237  1.69s        8      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 5; 601
+ *             5    4,100  1.69s        8      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 5; 576
+ *             5   12,151  2.24s        6      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 5; 519
+ *             5    7,528  2.24s        7      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 5; 516
+ *             4   15,011  2.72s        5      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 4; 556
+ *             4   12,224  2.72s        7      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 4; 434
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 7 solutions found.
+ ! Best objective         : 4; 434 (gap is 100.0% @ crit. 1 of 2)
+ ! Best bound             : 0; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 14,061,129
+ ! Number of fails        : 5,892,082
+ ! Total memory usage     : 45.8 MB (42.9 MB CP Optimizer + 2.9 MB Concert)
+ ! Time spent in solve    : 120.09s (119.81s engine + 0.28s extraction)
+ ! Search speed (br. / s) : 117,359.0
+ ! ----------------------------------------------------------------------------
+totVehicle  = 4
+totDistance = 434
+totCost  	 = 42
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S15	24	0	960	24	29	12	850	54	0	0
+D0	C98	14	218	338	245	0	0	592	64	9	10
+D0	C81	12	784	904	892	0	0	27	12	10	10
+D0	C79	38	39	159	39	0	0	990	40	30	10
+S0	C88	18	561	681	570	0	0	32	19	19	10
+S0	C22	35	621	741	698	0	0	79	35	40	10
+S3	C54	22	557	677	557	0	0	350	19	16	10
+S9	C43	49	102	222	120	0	0	956	4	20	10
+S15	C62	28	138	258	140	0	0	264	38	3	10
+C98	C14	22	198	318	279	0	0	39	40	10	10
+C14	DN	35	0	960	914	0	0	7	0	0	0
+C81	DN	12	0	960	914	0	0	7	0	0	0
+C88	DN	18	0	960	914	0	0	7	0	0	0
+C62	C93	17	317	437	317	0	0	170	21	3	10
+C43	S3	4	0	960	134	150	41	633	0	0	0
+C93	S0	21	0	960	348	363	37	38	0	0	0
+C22	DN	35	0	960	914	0	0	7	0	0	0
+C54	S0	18	0	960	585	612	69	101	1	0	0
+C79	S9	12	0	960	61	71	25	959	28	0	0
+23	Dist	rc201C10.txt	4	434	42	120.099	120	1
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 368 variables, 1,387 constraints
+ ! Presolve      : 835 extractables eliminated
+ ! Using starting point solution
+ ! TimeLimit            = 180
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.30s (0.30s extraction + 0.00s propagation)
+ !  . Log search space  : 3,070.4 (before), 3,070.4 (after)
+ !  . Memory usage      : 3.8 MB (before), 3.8 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        368                 -
+ + New bound is 4; 434; 0
+ ! Using temporal relaxation.
+ ! Starting point was completed to a full assignment.
+ *             4       42  0.66s        1      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 4; 434; 42.00000
+ *             4   11,696  1.60s        1      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 4; 434; 41.13333
+ *             4   11,515  1.61s        2      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 4; 434; 40.28333
+ *             4   14,275  1.61s        3      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 4; 434; 39.41666
+ *             4   10,823  1.61s        6      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 4; 434; 37.23333
+ *             4   17,903  1.92s        1      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 4; 434; 36.81666
+ *             4   18,151  1.92s        1      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 4; 434; 36.61666
+ *             4   19,086  1.92s        1      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 4; 434; 35.46666
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 8 solutions found.
+ ! Best objective         : 4; 434; 35.46666 (gap is 100.0% @ crit. 3 of 3)
+ ! Best bound             : 4; 434; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 42,827,674
+ ! Number of fails        : 19,343,302
+ ! Total memory usage     : 39.7 MB (36.8 MB CP Optimizer + 2.9 MB Concert)
+ ! Time spent in solve    : 180.16s (179.85s engine + 0.30s extraction)
+ ! Search speed (br. / s) : 238,118.0
+ ! ----------------------------------------------------------------------------
+totVehicle  = 4
+totDistance = 434
+totCost  	 = 35.466666667
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S15	24	0	960	24	33	23	25	54	0	0
+D0	C98	14	218	338	218	0	0	19	57	9	10
+D0	C81	12	784	904	784	0	0	10	12	10	10
+D0	C79	38	39	159	39	0	0	106	40	30	10
+S0	C88	18	561	681	561	0	0	19	18	19	10
+S0	C22	35	621	741	633	0	0	40	35	40	10
+S3	C54	22	557	677	557	0	0	56	55	16	10
+S9	C43	49	102	222	120	0	0	76	4	20	10
+S15	C62	28	138	258	138	0	0	25	49	3	10
+C98	C14	22	198	318	250	0	0	10	35	10	10
+C14	DN	35	0	960	806	0	0	0	0	0	0
+C81	DN	12	0	960	806	0	0	0	0	0	0
+C88	DN	18	0	960	806	0	0	0	0	0	0
+C62	C93	17	317	437	317	0	0	22	32	3	10
+C43	S3	4	0	960	134	165	77	56	0	0	0
+C93	S0	21	0	960	348	358	25	19	11	0	0
+C22	DN	35	0	960	806	0	0	0	0	0	0
+C54	S0	18	0	960	585	598	33	40	37	0	0
+C79	S9	12	0	960	61	71	25	76	28	0	0
+23	MCP-TOU2	rc201C10.txt	4	434	35.466666667	180.164	120	1
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 345 variables, 1,292 constraints
+ ! Presolve      : 878 extractables eliminated
+ ! TimeLimit            = 120
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.25s (0.25s extraction + 0.00s propagation)
+ !  . Log search space  : 2,841.7 (before), 2,841.7 (after)
+ !  . Memory usage      : 3.6 MB (before), 3.6 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        345                 -
+ + New bound is 0; 0
+ ! Using temporal relaxation.
+ *             4    3,658  1.52s        1      (gap is 100.0% @ crit. 1 of 2)
+   New objective is 4; 681
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 1 solution found.
+ ! Best objective         : 4; 681 (gap is 100.0% @ crit. 1 of 2)
+ ! Best bound             : 0; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 10,210,662
+ ! Number of fails        : 4,023,136
+ ! Total memory usage     : 43.9 MB (40.8 MB CP Optimizer + 3.1 MB Concert)
+ ! Time spent in solve    : 120.06s (119.81s engine + 0.25s extraction)
+ ! Search speed (br. / s) : 85,217.4
+ ! ----------------------------------------------------------------------------
+totVehicle  = 4
+totDistance = 681
+totCost  	 = 83.1
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S0	0	0	960	0	0	0	899	76	0	0
+D0	S3	36	0	960	36	50	35	378	42	0	0
+D0	C58	47	198	406	198	0	0	977	31	20	10
+D0	C93	21	350	404	350	0	0	723	57	3	10
+S0	C100	19	528	528	528	0	0	81	48	3	10
+S0	C87	38	441	441	441	0	0	556	38	13	10
+S1	C31	20	71	689	399	0	0	159	51	20	10
+S1	DN	37	0	960	883	0	0	23	0	0	0
+S3	C6	40	142	494	476	0	0	572	33	20	10
+S3	C43	4	39	490	54	0	0	328	73	20	10
+S11	C96	52	319	355	319	0	0	246	22	26	10
+S11	C15	14	607	739	608	0	0	940	41	20	10
+C96	S1	22	0	960	351	379	71	163	0	0	0
+C43	S11	73	0	960	137	166	74	293	0	0	0
+C87	DN	38	0	960	883	0	0	23	0	0	0
+C100	S1	48	0	960	586	601	38	48	0	0	0
+C15	C82	25	488	650	650	0	0	757	15	9	10
+C58	S11	19	0	960	227	244	43	954	12	0	0
+C31	S0	50	0	960	459	485	66	126	1	0	0
+C82	DN	15	0	960	883	0	0	23	0	0	0
+C93	S3	30	0	960	390	408	46	680	27	0	0
+C6	DN	33	0	960	883	0	0	23	0	0	0
+24	Dist	rc205C10.txt	4	681	83.1	120.069	120	1
+ ! -------------------------------------------------- CP Optimizer 12.10.0.0 --
+ ! Minimization problem - 381 variables, 1,294 constraints
+ ! Presolve      : 878 extractables eliminated
+ ! Using starting point solution
+ ! TimeLimit            = 180
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.24s (0.24s extraction + 0.00s propagation)
+ !  . Log search space  : 3,188.9 (before), 3,188.9 (after)
+ !  . Memory usage      : 3.8 MB (before), 3.8 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        381                 -
+ + New bound is 4; 681; 0
+ ! Using temporal relaxation.
+ ! Starting point was completed to a full assignment.
+ *             4       33  0.61s        1      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 4; 681; 83.10000
+ *             4      976  0.61s        1      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 4; 681; 82.76666
+ *             4    3,189  1.61s        1      (gap is 100.0% @ crit. 3 of 3)
+   New objective is 4; 681; 82.56666
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 3 solutions found.
+ ! Best objective         : 4; 681; 82.56666 (gap is 100.0% @ crit. 3 of 3)
+ ! Best bound             : 4; 681; 0
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 41,414,480
+ ! Number of fails        : 18,871,258
+ ! Total memory usage     : 39.1 MB (35.9 MB CP Optimizer + 3.2 MB Concert)
+ ! Time spent in solve    : 180.19s (179.94s engine + 0.24s extraction)
+ ! Search speed (br. / s) : 230,145.7
+ ! ----------------------------------------------------------------------------
+totVehicle  = 4
+totDistance = 681
+totCost  	 = 82.566666667
+i	j	d	est	lst	A	D	CG	U	Y	q	s
+D0	S0	0	0	960	0	0	0	637	76	0	0
+D0	S3	36	0	960	36	50	35	782	42	0	0
+D0	C58	47	198	406	198	0	0	989	30	20	10
+D0	C93	21	350	404	350	0	0	923	57	3	10
+S0	C100	19	528	528	528	0	0	84	57	3	10
+S0	C87	38	441	441	441	0	0	341	38	13	10
+S1	C31	20	71	689	398	0	0	483	52	20	10
+S1	DN	37	0	960	799	0	0	0	0	0	0
+S3	C6	40	142	494	463	0	0	322	33	20	10
+S3	C43	4	39	490	54	0	0	731	73	20	10
+S11	C96	52	319	355	319	0	0	699	25	26	10
+S11	C15	14	607	739	610	0	0	548	40	20	10
+C96	S1	22	0	960	351	378	69	671	3	0	0
+C43	S11	73	0	960	137	168	77	708	0	0	0
+C87	DN	38	0	960	799	0	0	0	0	0	0
+C100	S1	48	0	960	586	597	28	0	9	0	0
+C15	C82	25	488	650	645	0	0	291	15	9	10
+C58	S11	19	0	960	227	244	43	931	11	0	0
+C31	S0	50	0	960	458	487	74	256	2	0	0
+C82	DN	15	0	960	799	0	0	0	0	0	0
+C93	S3	30	0	960	390	408	46	431	27	0	0
+C6	DN	33	0	960	799	0	0	0	0	0	0
+24	MCP-TOU2	rc205C10.txt	4	681	82.566666667	180.198	120	1
+main returns 0
+
+<<< main
+
+
+<<< done
+
